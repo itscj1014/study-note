@@ -19,3 +19,19 @@ Spring将资源的统一定位和统一加载分开了，**Resource**定义了�
 
 
 
+#### 子类结构
+
+- **DefaultResourceLoader**
+  - 构造方法
+  - getResource方法
+  - ProtocolResolver：允许用户自定义资源加载协议，然后调用DefaultResourceLoader.addProtocolResolver(ProtocolResolver) 方法即可
+- **FileSystemResourceLoader**
+- **ResourcePatternResolver**
+  - 在 ResourceLoader 的基础上增加了 #getResources(String locationPattern) 方法，以支持根据路径匹配模式返回多个 Resource 实例
+  - 新增了一种新的协议前缀 "classpath*:"，该协议前缀由其子类负责实现
+  - **PathMatchingResourcePatternResolver** 是一个集大成者的 ResourceLoader ，因为它即实现了 Resource getResource(String location) 方法，也实现了 Resource[] getResources(String locationPattern) 方法。
+
+
+
+
+
