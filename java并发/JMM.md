@@ -40,6 +40,8 @@ CPU内存结构图：
 
 每个主板可以搭配多个CPU
 
+缓存一致性协议入门：（参考资料： https://www.infoq.cn/article/cache-coherency-primer/ ）
+
 
 
 两个CPU的线程同时加载一个内存中的变量和执行相同操作，例如 X = 1  ,X=X+1，结果两个CPU计算了两次，最后得出的结果是2
@@ -144,7 +146,9 @@ Java线程和内核线程的关系
 
 ### 为什么用并发，并发产生的问题
 
-什么是线程上下文？线程上下文切换？
+**什么是线程上下文？线程上下文切换？**
+
+CPU通过时间片来分配算法来循环执行任务，当前任务执行一个时间片后会切换到下一个任务，但是呢，在切换之前会保存上一个任务的状态，以便下次切换回这个任务时能，可以再加载这个任务的状态。所以任务 从保存到再加载的过程就是一次上下文切换。
 
 时间片：CPU分配给各个线程的时间
 
@@ -208,17 +212,36 @@ jvm 进程，他去申请空间，大部分时候，操作的是逻辑空间，�
 
 
 
-可见性：
+
+
+**java内存模型内存交互操作**
 
 
 
-原子性：volatitle不保证原子性
+可见性：代码sample
 
 
 
-有序性： 
+原子性：volatitle不保证原子性  代码sample
+
+- 指令重排：前提是 as-if-serial
+  - 发生时期：编译字节码阶段（执行器编译器）、CPU运行时指令重排
+
+- 内存屏障
 
 
+
+有序性： 禁止指令重排序优化
+
+
+
+**除了volatile，还有什么措施可以禁止指令重排？**
+
+还是得通过内存屏障——手动加内存屏障
+
+Unsafe.loadFence()
+
+Unsafe.storeFence()
 
 
 
@@ -226,5 +249,39 @@ jvm 进程，他去申请空间，大部分时候，操作的是逻辑空间，�
 
 
 
+**总线风暴**
 
+
+
+~~~java
+public class Singleton {
+
+    /**
+     * 查看汇编指令
+     * -XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -Xcomp
+     */
+    private volatile static Singleton myinstance;
+
+    public static Singleton getInstance() {
+        if (myinstance == null) {
+            synchronized (Singleton.class) {
+                if (myinstance == null) {
+                    myinstance = new Singleton();//对象创建过程，本质可以分文三步
+                    //1. 申请内存空间
+                    //2. 实例化对象
+                    //3. 填充实例化数据
+                    // 所以需要加上volatile，来禁止指令重排
+                    //对象延迟初始化
+                    //
+                }
+            }
+        }
+        return myinstance;
+    }
+
+    public static void main(String[] args) {
+        Singleton.getInstance();
+    }
+}
+~~~
 
