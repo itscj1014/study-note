@@ -1,0 +1,324 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x"></p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                春节7天练讲Day3：排序和二分查找
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/f6/9b/f66d8ddf1b9bc797584f4ffcefc0519b.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是王争。初三好！</p><p>为了帮你巩固所学，真正掌握数据结构和算法，我整理了数据结构和算法中，必知必会的30个代码实现，分7天发布出来，供你复习巩固所用。今天是第三篇。</p><p>和昨天一样，你可以花一点时间，来完成测验。测验完成后，你可以根据结果，回到相应章节，有针对性地进行复习。</p><p>前两天的内容，是关于数组和链表、排序和二分查找的。如果你错过了，点击文末的“<span class="orange">上一篇</span>”，即可进入测试。</p><hr></hr><h2>关于排序和二分查找的几个必知必会的代码实现</h2><h3>排序</h3><ul>
+<li>
+<p>实现归并排序、快速排序、插入排序、冒泡排序、选择排序</p>
+</li>
+<li>
+<p>编程实现O(n)时间复杂度内找到一组数据的第K大元素</p>
+</li>
+</ul><h3>二分查找</h3><ul>
+<li>
+<p>实现一个有序数组的二分查找算法</p>
+</li>
+<li>
+<p>实现模糊二分查找算法（比如大于等于给定值的第一个元素）</p>
+</li>
+</ul><h2>对应的LeetCode练习题（@Smallfly 整理）</h2><ul>
+<li>Sqrt(x) （x 的平方根）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/sqrtx/">https://leetcode.com/problems/sqrtx/</a></p><p>中文版：<a href="https://leetcode-cn.com/problems/sqrtx/">https://leetcode-cn.com/problems/sqrtx/</a></p><hr></hr><p>做完题目之后，你可以点击“请朋友读”，把测试题分享给你的朋友，说不定就帮他解决了一个难题。</p><p>祝你取得好成绩！明天见！</p><p><img src="https://static001.geekbang.org/resource/image/8e/d3/8e603e3d795fc0ab2698f6f5eabf14d3.jpg" alt=""></p><!-- [[[read_end]]] -->
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/50/99/44378317.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">李皮皮皮皮皮</span>
+                            </div>
+                            <div class="bd">各种排序算法真要说起来实际中使用的最多的也就是快排了。然而各种编程语言内置的标准库都包含排序算法的实现，基本没有自己动手实现的必要。然后作为经典的算法，自己实现一遍，分析分析时间空间复杂度对自己的算法设计大有裨益。需要注意的是为了高效，在实际的实现中，多种排序算法往往是组合使用的。例如c标准库中总体上是快排，但当数据量小于一定程度，会转而使用选择或插入排序。<br>求平方根使用牛顿法二分逼近😄 <br></div>
+                            <span class="time">2019-02-06 20:27</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/cf/f4/c1f41ff7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">吴...</span>
+                            </div>
+                            <div class="bd">虽然现在有很多排序算法自己不会亲自写，但是作为算法的基础，分治，归并，冒泡等排序算法在时间复杂度，空间复杂度以及原地排序这些算法知识上的理解非常有帮助。递归分治这些算法思想在简单的算法中也能体现出来，其实更多的是思维方式的训练。 <br></div>
+                            <span class="time">2019-02-07 23:05</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/94/47/75875257.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">虎虎❤️</span>
+                            </div>
+                            <div class="bd">基本排序算法的关注点分为：<br>1. 时间复杂度。如n的平方（冒泡，选择，插入）；插入排序的优化希尔排序，则把复杂度降低到n的3&#47;2次方；n乘以logn(快排，归并排序，堆排序）。<br>2. 是否为原地排序。如，归并排序需要额外的辅助空间。<br>3. 算法的稳定性。稳定排序（by nature）如冒泡，插入，归并。如果把次序考虑在内，可以把其他的排序（如快排，堆排序）也实现为稳定排序。<br>4. 算法的实现。同为时间复杂度同为n平方的算法中，插入排序的效率更高。但是如果算法实现的不好，可能会降低算法的效率，甚至让稳定的算法变得不稳定。又如，快速排序有不同的实现方式，如三路快排可以更好的应对待排序数组中有大量重复元素的情况。堆排序可以通过自上而下的递归方式实现，也可以通过自下而上的方式实现。<br>5. 不同算法的特点，如对于近乎有序的数组进行排序，首选插入排序，时间复杂度近乎是n，而快速排序则退化为n平方。<br><br>二分查找，需要注意 (l+r)&#47;2可能存在越界问题。<br><br>leetcode题，用二分查找找到x*x &gt; n 且(x-1)的平方小于n的数，则n-1就是结果。或者 x的平方小于n且x+1的平方大于n,则返回x。 <br></div>
+                            <span class="time">2019-02-07 12:50</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/3IAJeiapYnr5UuqwQqB7N7gYL71vLnUEibxAeOalsGw4bALEOkhoQMVc3bJ1ZTjL1gTTQmPwQgUfEfR5cnZeMo5g/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">abner</span>
+                            </div>
+                            <div class="bd">java实现冒泡排序<br>代码如下：<br>package sort;<br><br>public class BubbleSort {<br><br>    public int[] bubbleSort(int[] array) {<br>        for (int i = 0;i &lt; array.length - 1;i++) {<br>            for (int j = 0;j &lt; array.length - i - 1;j++) {<br>                if (array[j] &gt; array[j + 1]) {<br>                    int temp = array[j + 1];<br>                    array[j + 1] = array[j];<br>                    array[j] = temp;<br>                }<br>            }<br>        }<br>        return array;<br>    }<br><br>    public static void main(String[] args) {<br>        int[] array = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};<br>        BubbleSort bubbleSort = new BubbleSort();<br>        int[] result = bubbleSort.bubbleSort(array);<br>        for (int i = 0;i &lt; result.length;i++) {<br>            System.out.print(result[i] + &quot; &quot;);<br>        }<br>    }<br><br>}<br> <br></div>
+                            <span class="time">2019-02-11 17:44</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kai</span>
+                            </div>
+                            <div class="bd">实现模糊二分查找算法2:<br><br>public class BinarySearch {<br>    &#47;&#47; 3. 查找第一个大于等于给定值的元素<br>    public static int bsFistGE(int[] array, int target) {<br>        int lo = 0;<br>        int hi = array.length - 1;<br><br>        while (lo &lt;= hi) {<br>            int mid = lo + ((hi - lo) &gt;&gt; 1);<br><br>            if (array[mid] &gt;= target) {<br>                if (mid == 0 || array[mid-1] &lt; target) {<br>                    return mid;<br>                } else {<br>                    hi = mid - 1;<br>                }<br>            } else {<br>                lo = mid + 1;<br>            }<br>        }<br><br>        return -1;<br>    }<br><br>    &#47;&#47; 4. 查找最后一个小于等于给定值的元素<br>    public static int bsLastLE(int[] array, int target) {<br>        int lo = 0;<br>        int hi = array.length - 1;<br><br>        while (lo &lt;= hi) {<br>            int mid = lo + ((hi - lo) &gt;&gt; 1);<br><br>            if (array[mid] &lt;= target) {<br>                if (mid == hi || array[mid+1] &gt; target) {<br>                    return mid;<br>                } else {<br>                    lo = mid + 1;<br>                }<br>            } else {<br>                hi = mid - 1;<br>            }<br>        }<br><br>        return -1;<br>    }<br>} <br></div>
+                            <span class="time">2019-02-11 10:32</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kai</span>
+                            </div>
+                            <div class="bd">实现模糊二分查找算法1:<br><br>public class BinarySearch {<br>    <br>    &#47;&#47; 1. 查找第一个值等于给定值的元素<br>    public static int bsFirst(int[] array, int target) {<br>        int lo = 0;<br>        int hi = array.length - 1;<br><br>        while (lo &lt;= hi) {<br>            int mid = lo + ((hi - lo) &gt;&gt; 1);<br><br>            if (array[mid] &gt; target) {<br>                hi = mid - 1;<br>            } else if (array[mid] &lt; target) {<br>                lo = mid + 1;<br>            } else {<br>                if (mid == lo || array[mid-1] != array[mid]) {<br>                    return mid;<br>                } else {<br>                    hi = mid - 1;<br>                }<br>            }<br>        }<br><br>        return -1;<br>    }<br><br>    &#47;&#47; 2. 查找最后一个值等于给定值的元素<br>    public static int bsLast(int[] array, int target) {<br>        int lo = 0;<br>        int hi = array.length - 1;<br><br>        while (lo &lt;= hi) {<br>            int mid = lo + ((hi - lo) &gt;&gt; 1);<br><br>            if (array[mid] &gt; target) {<br>                hi = mid - 1;<br>            } else if (array[mid] &lt; target) {<br>                lo = mid + 1;<br>            } else {<br>                if (mid == hi || array[mid] != array[mid+1]) {<br>                    return mid;<br>                } else {<br>                    lo = mid + 1;<br>                }<br>            }<br>        }<br><br>        return -1;<br>    }<br>} <br></div>
+                            <span class="time">2019-02-11 10:31</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kai</span>
+                            </div>
+                            <div class="bd">实现一个有序数组的二分查找算法:<br><br>public class BinarySearch {<br>    &#47;&#47; 最简单的二分查找算法：针对有序无重复元素数组<br>    &#47;&#47; 迭代<br>    public static int binarySearch(int[] array, int target) {<br>        if (array == null) return -1;<br><br>        int lo = 0;<br>        int hi = array.length-1; &#47;&#47; 始终在[lo, hi]范围内查找target<br><br>        while (lo &lt;= hi) {<br>            int mid = lo + ((hi - lo) &gt;&gt; 1); &#47;&#47; 这里若是 (lo + hi) &#47; 2 有可能造成整型溢出<br><br>            if (array[mid] &gt;  target) {<br>                hi = mid - 1;<br>            } else if (array[mid] &lt; target) {<br>                lo = mid + 1;<br>            } else {<br>                return mid;<br>            }<br>        }<br><br>        return -1;<br>    }<br><br>    &#47;&#47; 递归<br>    public static int binarySearchRecur(int[] array, int target) {<br>        if (array == null) return -1;<br>        return bs(array, target, 0, array.length-1);<br>    }<br><br>    private static int bs(int[] array, int target, int lo, int hi) {<br>        if (lo &lt;= hi) {<br>            int mid = lo + ((hi - lo) &gt;&gt; 1);<br>            if (array[mid] &gt; target) {<br>                return bs(array, target, lo, mid-1);<br>            } else if (array[mid] &lt; target) {<br>                return bs(array, target, mid+1, hi);<br>            } else {<br>                return mid;<br>            }<br>        }<br><br>        return -1;<br>    }<br>} <br></div>
+                            <span class="time">2019-02-11 10:29</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/00/6f/aacb013d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">黄丹</span>
+                            </div>
+                            <div class="bd">王争老师初三快乐！<br>这是今天两道题的解题思路和代码<br>1. O(n)时间内找到第K大的元素：<br>解题思路：利用快排中分区的思想，选择数组区间A[0...n-1]的左右一个元素A[n-1]作为pivot，对数组A[0...n-1]原地分区，这样数组就分成了三部分，A[0..p-1],A[p],A[p+1...n-1],如果p+1=k,那么A[p]就是要求解的元素，如果K&gt;p+1,则说明第K大的元素在A[p+1...n-1]这个区间，否则在A[0...p-1]这个区间，递归的查找第K大的元素<br>2. Sqrt(x) （x 的平方根）<br>解题思路：利用二分查找的思想，从1到x查找x的近似平方根<br>代码：<br>https:&#47;&#47;github.com&#47;yyxd&#47;leetcode&#47;blob&#47;master&#47;src&#47;leetcode&#47;sort&#47;Problem69_Sqrt.java <br></div>
+                            <span class="time">2019-02-07 18:35</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/ec/9d/4d705f03.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">C_love</span>
+                            </div>
+                            <div class="bd">Use Binary Search<br><br>class Solution {<br>    public int mySqrt(int x) {<br>        if (x == 0 || x == 1) {<br>            return x;<br>        }<br>        <br>        int start = 0;<br>        int end = (x &gt;&gt; 1) + 1;<br>        <br>        while (start + 1 &lt; end) {<br>            final int mid = start + ((end - start) &gt;&gt; 1);<br>            final int quotient = x &#47; mid;<br>            if (quotient == mid) {<br>                return mid;<br>            } else if (quotient &lt; mid) {<br>                end = mid;<br>            } else {<br>                start = mid;<br>            }<br>        }<br>        <br>        return start;<br>    }<br>} <br></div>
+                            <span class="time">2019-02-07 13:00</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/f2/aa/c04fda0e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">失火的夏天</span>
+                            </div>
+                            <div class="bd">牛顿法或者二分逼近都可以解决平方根问题，leetcode上有些大神的思路真的很厉害，经常醍醐灌顶 <br></div>
+                            <span class="time">2019-02-06 22:55</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/cf/f4/c1f41ff7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">吴...</span>
+                            </div>
+                            <div class="bd">#include&lt;iostream&gt;<br>#include&lt;cmath&gt;<br>using namespace std;<br>double a = 1e-6;<br>double sqrt(double n){<br>	double low = 0.0;<br>	double high = n;<br>	<br>int i = 1000;<br><br>	while(i--){<br>		double mid = low + (high - low) &#47; 2.0; <br>		&#47;&#47;cout&lt;&lt;&quot;n:&quot;&lt;&lt;n&lt;&lt;endl;<br>		double square = mid * mid;<br>		&#47;&#47;cout&lt;&lt;&quot;sq:&quot;&lt;&lt;square&lt;&lt;endl;<br>		&#47;&#47;cout&lt;&lt;&quot;s:&quot;&lt;&lt;abs(square - n)&lt;&lt;endl;<br>		if(abs(mid * mid - n) &lt; a){<br>			return mid;<br>		}<br>		else{<br><br>			if(square &gt; n){<br>				high = mid;<br>			} <br>			else{<br>			    low = mid; <br>			}<br>		}<br>	}<br>	return -2.0;<br>}<br>int main(){<br>	double t;<br>	while(true){<br>		cin&gt;&gt;t;<br>		cout&lt;&lt;sqrt(t)&lt;&lt;endl;<br>	}<br>} <br></div>
+                            <span class="time">2019-02-14 11:34</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/2e/45/d4039dd3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Monster</span>
+                            </div>
+                            <div class="bd">&#47;**<br> * O(n)时间复杂度内求无序数组中第K大元素<br> *&#47;<br>public class TopK {<br><br>    public int findTopK(int[] arr, int k) {<br>        return findTopK(arr, 0, arr.length - 1, k);<br>    }<br><br>    private int findTopK(int[] arr, int left, int right, int k) {<br>        if (arr.length &lt; k) {<br>            return -1;<br>        }<br>        int pivot = partition(arr, left, right);<br>        if (pivot + 1 &lt; k) {<br>            findTopK(arr, pivot + 1, right, k);<br>        } else if (pivot + 1 &gt; k) {<br>            findTopK(arr, left, pivot - 1, k);<br>        }<br>        return arr[pivot];<br>    }<br><br><br>    private int partition(int[] array, int left, int right) {<br>        int pivotValue = array[right];<br>        int i = left;<br><br>        &#47;&#47;小于分区点放在左边 大于分区点放在右边<br>        for (int j = left; j &lt; right; j++) {<br>            if (array[j] &lt; pivotValue) {<br>                int tmp = array[i];<br>                array[i] = array[j];<br>                array[j] = tmp;<br>                i++;<br>            }<br>        }<br>        &#47;&#47;与分区点交换<br>        int tmp = array[i];<br>        array[i] = array[right];<br>        array[right] = tmp;<br>        return i;<br>    }<br>} <br></div>
+                            <span class="time">2019-02-13 18:22</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/18/03/5a47f26b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Eid</span>
+                            </div>
+                            <div class="bd">编程实现 O(n) 时间复杂度内找到一组数据的第 K 大元素。<br>这个的时间复杂路应该是n·logk吧？ <br></div>
+                            <span class="time">2019-02-12 19:05</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/40/10/b6bf3c3c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">纯洁的憎恶</span>
+                            </div>
+                            <div class="bd">这道题似乎可以等价于从1到x中找到一个数y，使得y*y小于等于x，且（y+1）*（y+1）大于x。那么可以从1到x逐个尝试，提高效率可以采用二分查找方法，时间复杂度为O（logx）。 <br></div>
+                            <span class="time">2019-02-09 17:00</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/17/88/be4fe19e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">molybdenum</span>
+                            </div>
+                            <div class="bd">老师新年好~这是我的作业<br>https:&#47;&#47;blog.csdn.net&#47;github_38313296&#47;article&#47;details&#47;86818929 <br></div>
+                            <span class="time">2019-02-09 16:21</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/ec/64/7403c694.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">ALAN</span>
+                            </div>
+                            <div class="bd">	&#47;&#47; find the k-th biggest number<br>	public int heapsort(int[] arr, int k) {<br>		&#47;&#47; build minimum heap<br>		for (int i = 1; i &lt;= k; i++) {<br>			while (i &#47; 2 &gt; 0 &amp;&amp; arr[i] &lt; arr[i &#47; 2]) { &#47;&#47; 自下往上堆化<br>				swap(arr, i, i &#47; 2); &#47;&#47; swap() 函数作用：交换下标为 i 和 i&#47;2 的两个元素<br>				i = i &#47; 2;<br>			}<br>		}<br>		&#47;&#47; replace the heap top element with the new element and heapify<br>		for (int i = k; i &lt; arr.length; i++) {<br>			if (arr[i] &lt;= arr[1])<br>				continue;<br>			else {<br>				arr[1] = arr[i];<br>				heapify(arr, k, 1);<br>			}<br>		}<br>		return arr[1];<br>	}<br><br>	public void swap(int[] arr, int j, int k) {<br>		int temp = arr[j];<br>		arr[j] = arr[k];<br>		arr[k] = temp;<br>	}<br><br>	private void heapify(int[] a, int n, int i) { &#47;&#47; 自上往下堆化<br>		while (true) {<br>			int minPos = i;<br>			if (i * 2 &lt;= n &amp;&amp; a[i] &gt; a[i * 2])<br>				minPos = i * 2;<br>			if (i * 2 + 1 &lt;= n &amp;&amp; a[minPos] &gt; a[i * 2 + 1])<br>				minPos = i * 2 + 1;<br>			if (minPos == i)<br>				break;<br>			swap(a, i, minPos);<br>			i = minPos;<br>		}<br>	} <br></div>
+                            <span class="time">2019-02-08 21:34</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/ec/64/7403c694.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">ALAN</span>
+                            </div>
+                            <div class="bd">sort answer:<br>&#47;&#47; guibing sort<br>	public int[] gbsort(int[] arr, int start, int end) {<br><br>		if (start == end)<br>			return new int[] { arr[start] };<br>		int[] l1 = gbsort(arr, start, (start + end) &#47; 2);<br>		int[] r1 = gbsort(arr, (start + end) &#47; 2 + 1, end);<br>		return merge(l1, r1);<br><br>	}<br><br>	&#47;&#47; merge<br>	public int[] merge(int[] a, int[] b) {<br>		int[] c = new int[a.length + b.length];<br>		int j = 0, k = 0;<br>		for (int i = 0; i &lt; a.length + b.length; i++) {<br>			if (j == a.length) {<br>				c[i] = b[k];<br>				k++;<br>				continue;<br>			} else if (k == b.length) {<br>				c[i] = a[j];<br>				j++;<br>				continue;<br><br>			}<br>			if (a[j] &lt; b[k]) {<br>				c[i] = a[j];<br>				j++;<br>			} else {<br>				c[i] = b[k];<br>				k++;<br>			}<br><br>		}<br><br>		return c;<br>	}<br><br>	&#47;&#47; quick sort<br>	public void qsort(int[] arr, int start, int end, int index) {<br>		&#47;&#47; compare and swap<br>		if (start &gt;= end)<br>			return;<br>		int j = start, k = end;<br>		int value = (start + end) &#47; 2;<br>		while (j &lt; k) {<br>			for (; j &lt; k; k--) {<br>				if (k &lt;= value)<br>					break;<br>				else if (arr[k] &lt;= arr[value]) { &#47;&#47; from small to big &gt;=<br>					continue;<br>				} else {<br>					&#47;&#47; swap<br>					int temp = arr[k];<br>					arr[k] = arr[value];<br>					arr[value] = temp;<br>					value = k;<br>					break;<br>				}<br><br>			}<br>			for (; j &lt; k; j++) {<br>				if (j &gt;= value)<br>					break;<br>				else if (arr[j] &gt;= arr[value]) { &#47;&#47; from small to big &lt;=<br>					continue;<br>				} else {<br>					&#47;&#47; swap<br>					int temp = arr[j];<br>					arr[j] = arr[value];<br>					arr[value] = temp;<br>					value = j;<br>					break;<br>				}<br><br>			}<br>		}<br><br>		qsort(arr, start, j, index);<br>		qsort(arr, k + 1, end, index);<br>	}<br><br><br> <br></div>
+                            <span class="time">2019-02-08 21:34</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/03/f7/3a493bec.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">老杨同志</span>
+                            </div>
+                            <div class="bd">&#47;&#47;平方根<br>&#47;&#47;递归的话会栈溢出<br>&#47;&#47;迭代法，要处理好溢出的问题，开始以为溢出时结果是负数，实测并非如此。<br>    public int sqrtLoop(int x) {<br>        return _mySqrtLoop(x,0,x&#47;2+1);<br>    }<br>    private int _mySqrtLoop(int x, int l, int r) {<br>        while(l&lt;r){<br>            int m = l+(r-l)&#47;2;<br>            long tmp = (long)m * (long)m;<br>            if(tmp==x||(tmp&lt;x &amp;&amp; (m+1)*(m+1)&gt;x)){<br>                return m;<br>            }else if(tmp&gt;x){<br>                r = m - 1;<br>            }else{<br>                l = m + 1;<br>            }<br>        }<br>        return l;<br>    }<br> <br></div>
+                            <span class="time">2019-02-08 17:00</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/03/f7/3a493bec.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">老杨同志</span>
+                            </div>
+                            <div class="bd">package com.jxyang.test.geek.day3;<br>&#47;&#47;数组中求第k大的元素<br>public class BigK {<br>    public static void main(String[] args) {<br>        int[] arr = {3,5,6,9,7,4,2,1,11,16};<br>        BigK bigK = new BigK();<br>        System.out.println(bigK.findBigK(arr,10));<br>    }<br>    private int findBigK(int[] arr, int k) {<br>        if(k&gt;arr.length||arr==null){<br>            return -1;<br>        }<br>        int m = partition(arr,0,arr.length-1,k-1);<br>        return arr[m];<br>    }<br>    &#47;*<br>        [l,r]处理数组l到r的闭区间<br>        [l+1,j] 小于arr[l],[j+1,i] 大于arr[l]<br>        循环结束，arr[l] 与 arr[j] 交换<br>        返回j<br>     *&#47;<br>    private int partition(int[] arr, int l, int r,int k) {<br>        &#47;&#47;结束条件<br>        if(l==r)<br>            return l;<br>        int j =l;<br>        for(int i=l+1;i&lt;=r;i++){<br>            if(arr[i]&lt;arr[l]){<br>                j++;<br>                int tmp = arr[i];<br>                arr[i] = arr[j];<br>                arr[j] = tmp;<br>            }else{<br>                continue;<br>            }<br>        }<br>        int tmp = arr[l];<br>        arr[l] = arr[j];<br>        arr[j] = tmp;<br>        while(j!=k){<br>            if(j&lt;k){<br>                j = partition(arr,j+1,r,k);<br>            }else{<br>                j = partition(arr,l,j-1,k);<br>            }<br>        }<br>        return k;<br>    }<br>}<br> <br></div>
+                            <span class="time">2019-02-08 11:30</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/23/f6/1ef70cab.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">你看起来很好吃</span>
+                            </div>
+                            <div class="bd">求平方根用python实现，基于二分查找法思想：<br>class Solution:<br>    def mySqrt(self, x: &#39;int&#39;) -&gt; &#39;int&#39;:<br>        if x == 0:<br>            return 0<br><br>        left, right = 1, x<br><br>        while True:<br>            mid = (left + right) &#47;&#47; 2<br>            if mid * mid &gt; x:<br>                right = mid<br>            else:<br>                if (mid + 1) * (mid +1) &gt; x:<br>                    return mid<br>                left = mid <br></div>
+                            <span class="time">2019-02-08 07:42</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

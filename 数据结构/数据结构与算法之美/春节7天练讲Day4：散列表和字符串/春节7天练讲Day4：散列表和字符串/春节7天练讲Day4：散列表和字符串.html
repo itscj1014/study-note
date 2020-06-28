@@ -1,0 +1,284 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x"></p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                春节7天练讲Day4：散列表和字符串
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/8c/4c/8c241e9fe88077c52d071d5f9afd664c.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是王争。初四好！</p><p>为了帮你巩固所学，真正掌握数据结构和算法，我整理了数据结构和算法中，必知必会的30个代码实现，分7天发布出来，供你复习巩固所用。今天是第四篇。</p><p>和昨天一样，你可以花一点时间，来完成测验。测验完成后，你可以根据结果，回到相应章节，有针对性地进行复习。</p><p>前几天的内容。如果你错过了，点击文末的“<span class="orange">上一篇</span>”，即可进入测试。</p><hr></hr><h2>关于散列表和字符串的4个必知必会的代码实现</h2><h3>散列表</h3><ul>
+<li>
+<p>实现一个基于链表法解决冲突问题的散列表</p>
+</li>
+<li>
+<p>实现一个LRU缓存淘汰算法</p>
+</li>
+</ul><h3>字符串</h3><ul>
+<li>
+<p>实现一个字符集，只包含a～z这26个英文字母的Trie树</p>
+</li>
+<li>
+<p>实现朴素的字符串匹配算法</p>
+</li>
+</ul><h2>对应的LeetCode练习题（@Smallfly 整理）</h2><h3>字符串</h3><ul>
+<li>Reverse String （反转字符串）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/reverse-string/">https://leetcode.com/problems/reverse-string/</a></p><p>中文版：<a href="https://leetcode-cn.com/problems/reverse-string/">https://leetcode-cn.com/problems/reverse-string/</a></p><ul>
+<li>Reverse Words in a String（翻转字符串里的单词）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/reverse-words-in-a-string/">https://leetcode.com/problems/reverse-words-in-a-string/</a></p><!-- [[[read_end]]] --><p>中文版：<a href="https://leetcode-cn.com/problems/reverse-words-in-a-string/">https://leetcode-cn.com/problems/reverse-words-in-a-string/</a></p><ul>
+<li>String to Integer (atoi)（字符串转换整数 (atoi)）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/string-to-integer-atoi/">https://leetcode.com/problems/string-to-integer-atoi/</a></p><p>中文版：<a href="https://leetcode-cn.com/problems/string-to-integer-atoi/">https://leetcode-cn.com/problems/string-to-integer-atoi/</a></p><hr></hr><p>做完题目之后，你可以点击“请朋友读”，把测试题分享给你的朋友，说不定就帮他解决了一个难题。</p><p>祝你取得好成绩！明天见！</p><p><img src="https://static001.geekbang.org/resource/image/8e/d3/8e603e3d795fc0ab2698f6f5eabf14d3.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/50/99/44378317.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">李皮皮皮皮皮</span>
+                            </div>
+                            <div class="bd">散列表的核心是散列函数和冲突解决算法，以及装载因子过大时如何扩容。散列函数的设计较为复杂，一般使用现有的函数，如murmur散列。冲突解决一般有开放寻址法和链表法。查看开源项目的源码实现很有意思，例如lua的table实现，是结合了两个方法的非常优雅的实现。根据装载因子扩容一般保持在2，在占用空间较大时慢慢缩减为1.5，1.25……如golang的实现。为了避免rehash时的延迟，可以使用先分配，后逐步散列的方法，redis就是使用这个方法的。<br>字符串是编程中一定会出现的问题，变种非常多，反转，反转单词，字串，最长字串，最长子序列等等，有时解决问题需要多种数据结构与算法的结合。 <br></div>
+                            <span class="time">2019-02-08 07:34</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kai</span>
+                            </div>
+                            <div class="bd">实现一个 LRU 缓存淘汰算法:<br><br>import java.util.HashMap;<br>import java.util.Iterator;<br><br>public class LRU&lt;K,V&gt; {<br>    <br>    private Node head;<br>    private Node tail;<br>    private HashMap&lt;K, Node&gt; map;<br>    private int maxSize;<br><br>    private class Node {<br>        Node pre;<br>        Node next;<br>        K k;<br>        V v;<br>        public Node(K k, V v) {<br>            this.k = k;<br>            this.v = v;<br>        }<br>    }<br><br>    public LRU(int maxSize) {<br>        this.maxSize = maxSize;<br>        this.map = new HashMap&lt;&gt;(maxSize * 4 &#47; 3);<br>        head = new Node(null, null);<br>        tail = new Node(null, null);<br>        head.next = tail;<br>        tail.pre = head;<br>    }<br><br>    public V get(K key) {<br>        if (!map.containsKey(key)) {<br>            return null;<br>        }<br>        Node node = map.get(key);<br>        unlink(node);<br>        appendToHead(node);<br>        return node.v;<br>    }<br>    public void put(K key, V value) {<br>        if (map.containsKey(key)) {<br>            Node node = map.get(key);<br>            unlink(node);<br>        }<br>        Node node = new Node(key, value);<br>        appendToHead(node);<br>        map.put(key, node);<br>        if (map.size() &gt; maxSize) {<br>            Node toRemove = removeTail();<br>            map.remove(toRemove.k);<br>        }<br>    }<br>    private Node removeTail() {<br>        Node node = tail.pre;<br>        Node pre = node.pre;<br>        tail.pre = pre;<br>        pre.next = tail;<br>        node.next = null;<br>        node.pre = null;<br>        return node;<br>    }<br>    private void appendToHead(Node node) {<br>        Node next = head.next;<br>        node.next = next;<br>        node.pre = head;<br>	next.pre = node;<br>        head.next = node;<br>    }<br>    private void unlink(Node node) {<br>        Node pre = node.pre;<br>        Node next = node.next;<br>        pre.next = next;<br>        next.pre = pre;<br>        node.pre = null;<br>        node.next = null;<br>    }<br>    <br>} <br></div>
+                            <span class="time">2019-02-11 10:36</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kai</span>
+                            </div>
+                            <div class="bd">哇塞，老师太牛了，过年都在更新，一直在跟着老师的课程在总结归纳，同时找来题目在练习，这个专栏很牛~ <br></div>
+                            <span class="time">2019-02-08 21:15</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/23/f6/1ef70cab.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">你看起来很好吃</span>
+                            </div>
+                            <div class="bd">字符串转换整数python实现：<br>import math<br><br>class Solution:<br>    def myAtoi(self, str: &#39;str&#39;) -&gt; &#39;int&#39;:<br>        result = 0<br><br>        i, N, former = 0, len(str), 1<br><br>        while i &lt; N:<br>            if str[i] != &#39; &#39;:<br>                break        <br>            i += 1<br>            <br>        if i &lt; N and (str[i] == &#39;-&#39; or str[i] == &#39;+&#39;):<br>            former = -1 if str[i] == &#39;-&#39; else 1<br>            i += 1<br>            <br>        while i &lt; N:<br>            if str[i].isdigit():<br>                result = result * 10 + int(str[i])<br>                i += 1<br>            else:<br>                break<br><br>        result = result * former<br>        if result &gt; (math.pow(2, 31) * -1) and result &lt; (math.pow(2,31) - 1):<br>            return result<br>        elif former &gt; 0 :<br>            return int(math.pow(2,31) - 1)<br>        else:<br>            return int(math.pow(2,31) * -1) <br></div>
+                            <span class="time">2019-02-10 00:14</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/40/10/b6bf3c3c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">纯洁的憎恶</span>
+                            </div>
+                            <div class="bd">1.从两端向中间两两对调，时间复杂度O（n）。<br><br>2.先去空格，O（n^2）。从两端向中间查找单词，找到一对单词s、t（s在前t在后），保存这两个单词，如果s长t短，把它们之间的字符串整体左移长度差个字符，反之整体右移长度差个字符，再把s和t按调整后位置向原数组赋值，O（n^2）。<br><br>3.如果字符串全为空、全为空格、首个非空格字符非法，则返回0。若首个合法字符位“-”则记录。int num=0；逐个读取数字部分字符a，若a合法，则num*=10，然后num+=a-‘0’，直到读取结束或者读到非法字符，此时如果记录的首个合法字符为“-”返回num*（-1），否则返回num。不知int型运算过程中结果值溢出，是否自动将值设置为边界值。如果不能就要在每次乘10的时候结合“-”考察一下是否越界。 <br></div>
+                            <span class="time">2019-02-09 18:57</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/23/f6/1ef70cab.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">你看起来很好吃</span>
+                            </div>
+                            <div class="bd">反转字符串python实现：<br>class Solution:<br>    def reverseString(self, s: &#39;List[str]&#39;) -&gt; &#39;None&#39;:<br>        &quot;&quot;&quot;<br>        Do not return anything, modify s in-place instead.<br>        &quot;&quot;&quot;<br>        i, N = 0, len(s)<br>        while i &lt; N&#47;&#47;2:<br>            s[i], s[N-1-i] = s[N-1-i], s[i]<br>            i += 1<br>            <br>        print(s) <br></div>
+                            <span class="time">2019-02-09 16:19</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/17/88/be4fe19e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">molybdenum</span>
+                            </div>
+                            <div class="bd">老师新年好，这是我第四天的作业<br>https:&#47;&#47;blog.csdn.net&#47;github_38313296&#47;article&#47;details&#47;86818634 <br></div>
+                            <span class="time">2019-02-09 16:17</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/04/9a/f2c0a206.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">ext4</span>
+                            </div>
+                            <div class="bd">反转字符串<br>class Solution {<br>public:<br>    string reverseString(string s) {<br>        int length = s.length();<br>        if (length &lt; 2) {<br>            return s;<br>        }<br>        int i = 0, j = length - 1;<br>        char temp;<br>        while (i &lt; j) {<br>            temp = s[i];<br>            s[i] = s[j];<br>            s[j] = temp;<br>            i++;<br>            j--;<br>        }<br>        return s;<br>    }<br>}; <br></div>
+                            <span class="time">2019-02-09 07:37</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/00/6f/aacb013d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">黄丹</span>
+                            </div>
+                            <div class="bd">王争老师，新年的第四天快乐，已经很晚了，祝您好梦！<br>关于基于链表法解决冲突的散列表，就是使用一个数组，将值散列到数组下标上，但数组的每个值又是一个链表的头结点，当遇到冲突时就遍历该头结点后链表。其实java中hashmap底层的实现原理就是一个基于链表解决冲突的动态扩容的数组。大家有兴趣可以自己实现一下hashmap的底层数据结构，还是很有收获的。<br>今天leetcode上的三题都是关于字符串的，下面是我的解题思路和代码<br>1. Reverse String （反转字符串）<br>解题思路：这一题要求使用O(1)的空间将字符串进行反转，就是原地反转字符串，对字符串s[0…n-1]来说当i&lt;n&#47;2;将i与n-1-i位置的字符进行互换就行.<br>代码： https:&#47;&#47;github.com&#47;yyxd&#47;leetcode&#47;blob&#47;master&#47;src&#47;leetcode&#47;strings&#47;Problem344_ReverseString.java<br>2. Reverse Words in a String （翻转字符串里的单词）<br>解题思路：这一题我用的是java中的StringBuilder处理字符串，先用split函数将字符串按空格分开，但是当有多个连续空格时，一定要注意这种不能当做单词处理，要检查一下。<br>代码： https:&#47;&#47;github.com&#47;yyxd&#47;leetcode&#47;blob&#47;master&#47;src&#47;leetcode&#47;strings&#47;Problem151_ReverseWordsInString.java<br>3. String to Integer (atoi) 字符串转换整数 (atoi)）<br>解题思路：将字符串转化为整数,首先是对数字前面的+&#47;-进行处理，遍历字符串，如果不是数字字符就break，自己不懂得地方在于如何将大于INT.MAX 的值转化为 INT.MAX,将INT.MIN的值化为 INT.MIN，我自己想到的解法是用更高精度的long去保存，然后转化成int类型的值<br>代码： https:&#47;&#47;github.com&#47;yyxd&#47;leetcode&#47;blob&#47;master&#47;src&#47;leetcode&#47;strings&#47;Problem8_atoi.java<br> <br></div>
+                            <span class="time">2019-02-08 23:18</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/94/47/75875257.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">虎虎❤️</span>
+                            </div>
+                            <div class="bd">itoa<br><br>public class Solution {<br>	public int myAtoi(String str) {<br>		if (str.isEmpty())<br>			return 0;<br>		str = str.trim();<br>		int i = 0, ans = 0, sign = 1, len = str.length();<br>		if (str.charAt(i) == &#39;-&#39; || str.charAt(i) == &#39;+&#39;)<br>			sign = str.charAt(i++) == &#39;+&#39; ? 1 : -1;<br>		for (; i &lt; len; ++i) {<br>			int tmp = str.charAt(i) - &#39;0&#39;;<br>			if (tmp &lt; 0 || tmp &gt; 9)<br>				break;<br>			if (ans &gt; Integer.MAX_VALUE &#47; 10<br>					|| (ans == Integer.MAX_VALUE &#47; 10 &amp;&amp; Integer.MAX_VALUE % 10 &lt; tmp))<br>				return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;<br>			else<br>				ans = ans * 10 + tmp;<br>		}<br>		return sign * ans;<br>	}<br>} <br></div>
+                            <span class="time">2019-02-08 23:13</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/7c/16/38c07a04.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">_CountingStars</span>
+                            </div>
+                            <div class="bd">反转字符串 go 语言实现<br>package main<br><br>import &quot;fmt&quot;<br><br>func reverseString(s []byte) {<br>	length := len(s)<br>	for i := 0; i &lt; length&#47;2; i++ {<br>		s[i], s[length-i-1] = s[length-i-1], s[i]<br>	}<br>}<br><br>func main() {<br>	testString := []byte{&#39;h&#39;, &#39;e&#39;, &#39;l&#39;, &#39;l&#39;, &#39;o&#39;}<br>	fmt.Println(string(testString[:]))<br>	reverseString(testString)<br>	fmt.Println(string(testString[:]))<br>}<br> <br></div>
+                            <span class="time">2019-02-08 22:02</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/f2/aa/c04fda0e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">失火的夏天</span>
+                            </div>
+                            <div class="bd">LRU缓存淘汰算法<br>    private class Node{<br>        private Node prev;<br>        private Node next;<br>        private int key;<br>        private int value;<br><br>        Node(int key,int value){<br>            this.key = key;<br>            this.value = value;<br>        }<br>    }<br><br>    private Node head;&#47;&#47; 最近最少使用，类似列队的头，出队<br>    private Node tail;&#47;&#47; 最近最多使用，类似队列的尾，入队<br>    private Map&lt;Integer,Node&gt; cache;<br>    private int capacity;<br><br>    public LRUCache(int capacity) {<br>        this.cache = new HashMap&lt;&gt;();<br>        this.capacity = capacity;<br>    }<br><br>    public int get(int key) {<br>        Node node = cache.get(key);<br>        if(node == null){<br>            return -1;<br>        }else{<br>            moveNode(node);<br>            return node.value;<br>        }<br>    }<br><br>    public void put(int key, int value) {<br>        Node node = cache.get(key);<br>        if (node != null){<br>            node.value = value;<br>            moveNode(node);<br>        }else {<br>            removeHead();<br>            addNode(new Node(key,value));<br>        }<br>        cache.put(key,node);<br>    }<br><br>    private void removeHead(){<br>        if (cache.size() == capacity){<br>            Node tempNode = head;<br>            cache.remove(head.key);<br>            head = head.next;<br>            tempNode.next = null;<br>            if (head != null)<br>                head.prev = null;<br>        }<br>    }<br><br>    private void addNode(Node node){<br>        if (head == null)<br>            head = tail = node;<br>        else<br>            addNodeToTail(node);<br>    }<br><br>    private void addNodeToTail(Node node){<br>        node.prev = tail;<br>        tail.next = node;<br>        tail = node;<br>    }<br><br>    private void moveNode(Node node){<br>        if(head == node &amp;&amp; node != tail){<br>            head = node.next;<br>            head.prev = null;<br>            node.next = null;<br>            addNodeToTail(node);<br>        }else if (tail == node){<br>        }else {<br>            node.prev.next = node.next;<br>            node.next.prev = node.prev;<br>            node.next = null;<br>            addNodeToTail(node);<br>        }<br>    }<br>} <br></div>
+                            <span class="time">2019-02-08 21:41</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/1d/13/31ea1b0b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">峰</span>
+                            </div>
+                            <div class="bd">反转字符串<br>class Solution {<br>    public void reverseString(char[] s) {<br>        int start = 0;<br>        int end = s.length - 1;<br>        while(start &lt; end){<br>            swap(s,start,end);<br>            start++;<br>            end--;<br>        }<br>    }<br>    <br>    public void swap(char[] array,int a,int b){<br>        char tmp = array[a];<br>        array[a] = array[b];<br>        array[b] = tmp;<br>    }<br>    <br>    <br>} <br></div>
+                            <span class="time">2019-02-08 19:33</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/03/f7/3a493bec.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">老杨同志</span>
+                            </div>
+                            <div class="bd">&#47;&#47;字符串转换整数<br>package com.jxyang.test.geek.day4.Solution;<br><br>class Solution2 {<br>    public int myAtoi(String str) {<br>        if(str==null){<br>            return 0;<br>        }<br>        char[] arr= str.toCharArray();<br>        boolean flag = false;<br>        boolean numBegin = false;<br>        int result = 0;<br>        for(int i =0;i&lt;arr.length;i++){<br>            if(numBegin &amp;&amp; (arr[i]==&#39;-&#39;||arr[i]==&#39;+&#39;||arr[i]==&#39; &#39;)){<br>                break;<br>            }else if(arr[i]==&#39; &#39;)  {<br>                continue;<br>            }else if(arr[i]==&#39;+&#39;){<br>                numBegin = true;<br>                continue;<br>            }else if(arr[i]==&#39;-&#39;){<br>                flag = true;<br>                numBegin = true;<br>                continue;<br>            }else if(arr[i]&gt;=&#39;0&#39;&amp;&amp;arr[i]&lt;=&#39;9&#39;){<br>                numBegin = true;<br>                if(result==0){<br>                    result = flag?(&#39;0&#39;-arr[i]):(arr[i]-&#39;0&#39;);<br>                }else{<br>                    try{<br>                        result = Math.multiplyExact(result,10);<br>                        result = Math.addExact(result,flag?(&#39;0&#39;-arr[i]):(arr[i]-&#39;0&#39;));<br>                    }catch (Exception e){<br>                        if(flag){<br>                            return Integer.MIN_VALUE;<br>                        }else{<br>                            return Integer.MAX_VALUE;<br>                        }<br>                    }<br>                }<br>            }else{<br>                break;<br>            }<br>        }<br>        return result;<br>    }<br>    public static void main(String[] args) {<br>        Solution2 solution2 = new Solution2();<br>        System.out.println(solution2.myAtoi(&quot;42&quot;));<br>        System.out.println(solution2.myAtoi(&quot; +0 123&quot;));&#47;&#47;期望123<br>        System.out.println(solution2.myAtoi(&quot;   -42&quot;));<br>        System.out.println(solution2.myAtoi(&quot;4193 with words&quot;));<br>        System.out.println(solution2.myAtoi(&quot;words and 987&quot;));<br>        System.out.println(solution2.myAtoi(&quot;-91283472332&quot;));&#47;&#47;期望-2147483648<br>        System.out.println(solution2.myAtoi(&quot;+1&quot;));&#47;&#47;期望-2147483648<br>    }<br>} <br></div>
+                            <span class="time">2019-02-08 18:23</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/03/f7/3a493bec.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">老杨同志</span>
+                            </div>
+                            <div class="bd">class Solution {<br>&#47;&#47;反转字符串<br>    public void reverseString(char[] s) {<br>        if(s==null||s.length&lt;2){<br>            return;<br>        }<br>        int l=0;<br>        int r=s.length-1;<br>        while (l&lt;r){<br>            char tmp = s[l];<br>            s[l] = s[r];<br>            s[r] = tmp;<br>            l++;<br>            r--;<br>        }<br>    }<br>} <br></div>
+                            <span class="time">2019-02-08 17:12</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/ec/9d/4d705f03.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">C_love</span>
+                            </div>
+                            <div class="bd">Reverse Words in a String<br><br>public class Solution {<br>    public String reverseWords(String s) {<br>        final List&lt;String&gt; words = new ArrayList&lt;&gt;();<br>        final char[] charArray = s.toCharArray();<br>        <br>        int start = 0;<br>        int end = 0;<br>        while (end &lt; s.length()) {<br>            if (&#39; &#39; == charArray[end]) {<br>                if (start != end) {<br>                    words.add(getWord(charArray, start, end));<br>                    start = end;<br>                }<br>                start++;<br>                end++;<br>            } else {<br>                end++;<br>            }<br>        }<br>        <br>        if (start != end) {<br>            words.add(getWord(charArray, start, end));<br>        } <br>        <br>        Collections.reverse(words);<br>        return String.join(&quot; &quot;, words);<br>    }<br>    <br>    private String getWord(final char[] charArray, final int start, final int end) {<br>        char[] tmp = new char[end - start];<br>        int pos = 0;<br>        for(int i = start; i &lt; end; i++) {<br>            tmp[pos++] = charArray[i];<br>        }<br>        return new String(tmp);<br>    }<br>} <br></div>
+                            <span class="time">2019-02-08 12:40</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

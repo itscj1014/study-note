@@ -1,0 +1,356 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x"></p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                不定期福利第三期讲测一测你的算法阶段学习成果
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/eb/cb/eba5d1fd5d124fe22c512367134f76cb.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>专栏最重要的基础篇马上就要讲完了，不知道你掌握了多少？我从前面的文章中挑选了一些案例，稍加修改，组成了一套测试题。</p><p>你先不要着急看答案，自己先想一想怎么解决，测一测自己对之前的知识掌握的程度。如果有哪里卡壳或者不怎么清楚的，可以回过头再复习一下。</p><p>正所谓温故知新，这种通过实际问题查缺补漏的学习方法，非常利于你巩固前面讲的知识点，你可要好好珍惜这次机会哦！</p><h2>实战测试题（一）</h2><p>假设猎聘网有10万名猎头顾问，每个猎头顾问都可以通过做任务（比如发布职位），来积累积分，然后通过积分来下载简历。<strong>假设你是猎聘网的一名工程师，如何在内存中存储这10万个猎头ID和积分信息，让它能够支持这样几个操作：</strong></p><ul>
+<li>
+<p>根据猎头的ID快速查找、删除、更新这个猎头的积分信息；</p>
+</li>
+<li>
+<p>查找积分在某个区间的猎头ID列表；</p>
+</li>
+<li>
+<p>查询积分从小到大排在第x位的猎头ID信息；</p>
+</li>
+<li>
+<p>查找按照积分从小到大排名在第x位到第y位之间的猎头ID列表。</p>
+</li>
+</ul><h3>相关章节</h3><p><a href="https://time.geekbang.org/column/article/42896">17 | 跳表：为什么Redis一定要用跳表来实现有序集合？</a></p><p><a href="https://time.geekbang.org/column/article/64858">20 | 散列表（下）：为什么散列表和链表经常会一起使用？</a></p><p><a href="https://time.geekbang.org/column/article/68638">25 | 红黑树：为什么工程中都用红黑树这种二叉树？</a></p><h3>题目解析</h3><p>这个问题既要通过ID来查询，又要通过积分来查询，所以，对于猎头这样一个对象，我们需要将其组织成两种数据结构，才能支持这两类操作。</p><!-- [[[read_end]]] --><p>我们按照ID，将猎头信息组织成散列表。这样，就可以根据ID信息快速的查找、删除、更新猎头的信息。我们按照积分，将猎头信息组织成跳表这种数据结构，按照积分来查找猎头信息，就非常高效，时间复杂度是O(logn)。</p><p>我刚刚讲的是针对第一个、第二个操作的解决方案。第三个、第四个操作是类似的，按照排名来查询，这两个操作该如何实现呢？</p><p>我们可以对刚刚的跳表进行改造，每个索引结点中加入一个span字段，记录这个索引结点到下一个索引结点的包含的链表结点的个数。这样就可以利用跳表索引，快速计算出排名在某一位的猎头或者排名在某个区间的猎头列表。</p><p>实际上，这些就是Redis中有序集合这种数据类型的实现原理。在开发中，我们并不需要从零开始代码实现一个散列表和跳表，我们可以直接利用Redis的有序集合来完成。</p><h2>实战测试题（二）</h2><p>电商交易系统中，订单数据一般都会很大，我们一般都分库分表来存储。假设我们分了10个库并存储在不同的机器上，在不引入复杂的分库分表中间件的情况下，我们希望开发一个小的功能，能够快速地查询金额最大的前K个订单（K是输入参数，可能是1、10、1000、10000，假设最大不会超过10万）。<strong>如果你是这个功能的设计开发负责人，你会如何设计一个比较详细的、可以落地执行的设计方案呢？</strong></p><p>为了方便你设计，我先交代一些必要的背景，在设计过程中，如果有其他需要明确的背景，你可以自行假设。</p><ul>
+<li>
+<p>数据库中，订单表的金额字段上建有索引，我们可以通过select order by limit语句来获取数据库中的数据；</p>
+</li>
+<li>
+<p>我们的机器的可用内存有限，比如只有几百M剩余可用内存。希望你的设计尽量节省内存，不要发生Out of Memory Error。</p>
+</li>
+</ul><h3>相关章节</h3><p><a href="https://time.geekbang.org/column/article/41913">12 | 排序（下）：如何用快排思想在O(n)内查找第K大元素？</a></p><p><a href="https://time.geekbang.org/column/article/69913">28 | 堆和堆排序：为什么说堆排序没有快速排序快？</a></p><p><a href="https://time.geekbang.org/column/article/70187">29 | 堆的应用：如何快速获取到Top 10最热门的搜索关键词？</a></p><h3>题目解析</h3><p>解决这个题目的基本思路我想你应该能想到，就是借助归并排序中的合并函数，这个我们在排序（下）以及堆的应用那一节中讲过。</p><p>我们从每个数据库中，通过select order by limit语句，各取局部金额最大的订单，把取出来的10个订单放到优先级队列中，取出最大值（也就是大顶堆堆顶数据），就是全局金额最大的订单。然后再从这个全局金额最大订单对应的数据库中，取出下一条订单（按照订单金额从大到小排列的），然后放到优先级队列中。一直重复上面的过程，直到找到金额前K（K是用户输入的）大订单。</p><p>从算法的角度看起来，这个方案非常完美，但是，从实战的角度来说，这个方案并不高效，甚至很低效。因为我们忽略了，数据库读取数据的性能才是这个问题的性能瓶颈。所以，我们要尽量减少SQL请求，每次多取一些数据出来，那一次性取出多少才合适呢？这就比较灵活、比较有技巧了。一次性取太多，会导致数据量太大，SQL执行很慢，还有可能触发超时，而且，我们题目中也说了，内存有限，太多的数据加载到内存中，还有可能导致Out of Memory Error。</p><p>所以，一次性不能取太多数据，也不能取太少数据，到底是多少，还要根据实际的硬件环境做benchmark测试去找最合适的。</p><h2>实战测试题（三）</h2><p>我们知道，CPU资源是有限的，任务的处理速度与线程个数并不是线性正相关。相反，过多的线程反而会导致CPU频繁切换，处理性能下降。所以，线程池的大小一般都是综合考虑要处理任务的特点和硬件环境，来事先设置的。</p><p><strong>当我们向固定大小的线程池中请求一个线程时，如果线程池中没有空闲资源了，这个时候线程池如何处理这个请求？是拒绝请求还是排队请求？各种处理策略又是怎么实现的呢？</strong></p><h3>相关章节</h3><p><a href="https://time.geekbang.org/column/article/41330">09 | 队列：队列在线程池等有限资源池中的应用</a></p><h3>题目解析</h3><p>这个问题的答案涉及队列这种数据结构。队列可以应用在任何有限资源池中，用于排队请求，比如数据库连接池等。实际上，对于大部分资源有限的场景，当没有空闲资源时，基本上都可以通过“队列”这种数据结构来实现请求排队。</p><p>这个问题的具体答案，在队列那一节我已经讲得非常详细了，你可以回去看看，这里我就不赘述了。</p><h2>实战测试题（四）</h2><p>通过IP地址来查找IP归属地的功能，不知道你有没有用过？没用过也没关系，你现在可以打开百度，在搜索框里随便输一个IP地址，就会看到它的归属地。</p><p>这个功能并不复杂，它是通过维护一个很大的IP地址库来实现的。地址库中包括IP地址范围和归属地的对应关系。比如，当我们想要查询202.102.133.13这个IP地址的归属地时，我们就在地址库中搜索，发现这个IP地址落在[202.102.133.0, 202.102.133.255]这个地址范围内，那我们就可以将这个IP地址范围对应的归属地“山东东营市”显示给用户了。</p><pre><code>[202.102.133.0, 202.102.133.255]  山东东营市 
+[202.102.135.0, 202.102.136.255]  山东烟台 
+[202.102.156.34, 202.102.157.255] 山东青岛 
+[202.102.48.0, 202.102.48.255] 江苏宿迁 
+[202.102.49.15, 202.102.51.251] 江苏泰州 
+[202.102.56.0, 202.102.56.255] 江苏连云港
+</code></pre><p>在庞大的地址库中逐一比对IP地址所在的区间，是非常耗时的。<strong>假设在内存中有12万条这样的IP区间与归属地的对应关系，如何快速定位出一个IP地址的归属地呢？</strong></p><h3>相关章节</h3><p><a href="https://time.geekbang.org/column/article/42520">15 | 二分查找（上）：如何用最省内存的方式实现快速查找功能？</a></p><p><a href="https://time.geekbang.org/column/article/42733">16 | 二分查找（下）：如何快速定位IP对应的省份地址？</a></p><h3>题目解析</h3><p>这个问题可以用二分查找来解决，不过，普通的二分查找是不行的，我们需要用到二分查找的变形算法，查找最后一个小于等于某个给定值的数据。不过，二分查找最难的不是原理，而是实现。要实现一个二分查找的变形算法，并且实现的代码没有bug，可不是一件容易的事情，不信你自己写写试试。</p><p>关于这个问题的解答以及写出bug free的二分查找代码的技巧，我们在二分查找（下）那一节有非常详细的讲解，你可以回去看看，我这里就不赘述了。</p><h2>实战测试题（五）</h2><p>假设我们现在希望设计一个简单的海量图片存储系统，最大预期能够存储1亿张图片，并且希望这个海量图片存储系统具有下面这样几个功能：</p><ul>
+<li>
+<p>存储一张图片及其它的元信息，主要的元信息有：图片名称以及一组tag信息。比如图片名称叫玫瑰花，tag信息是{红色，花，情人节}；</p>
+</li>
+<li>
+<p>根据关键词搜索一张图片，比如关键词是“情人节 花”“玫瑰花”；</p>
+</li>
+<li>
+<p>避免重复插入相同的图片。这里，我们不能单纯地用图片的元信息，来比对是否是同一张图片，因为有可能存在名称相同但图片内容不同，或者名称不同图片内容相同的情况。</p>
+</li>
+</ul><p>我们希望自助开发一个简单的系统，不希望借助和维护过于复杂的三方系统，比如数据库（MySQL、Redis等）、分布式存储系统（GFS、Bigtable等），并且我们单台机器的性能有限，比如硬盘只有1TB，内存只有2GB，<strong>如何设计一个符合我们上面要求，操作高效，且使用机器资源最少的存储系统呢？</strong></p><h3>相关章节</h3><p><a href="https://time.geekbang.org/column/article/65312">21 | 哈希算法（上）：如何防止数据库中的用户信息被脱库？</a></p><p><a href="https://time.geekbang.org/column/article/67388">22 | 哈希算法（下）：哈希算法在分布式系统中有哪些应用？</a></p><h3>题目解析</h3><p>这个问题可以分成两部分，第一部分是根据元信息的搜索功能，第二部分是图片判重。</p><p>第一部分，我们可以借助搜索引擎中的倒排索引结构。关于倒排索引我会在实战篇详细讲解，我这里先简要说下。</p><p>如题目中所说，一个图片会对应一组元信息，比如玫瑰花对应{红色，花，情人节}，牡丹花对应{白色，花}，我们可以将这种图片与元信息之间的关系，倒置过来建立索引。“花”这个关键词对应{玫瑰花，牡丹花}，“红色”对应{玫瑰花}，“白色”对应{牡丹花}，“情人节”对应{玫瑰花}。</p><p>当我们搜索“情人节 花”的时候，我们拿两个搜索关键词分别在倒排索引中查找，“花”查找到了{玫瑰花，牡丹花}，“情人节”查找到了{玫瑰花}，两个关键词对应的结果取交集，就是最终的结果了。</p><p>第二部分关于图片判重，我们要基于图片本身来判重，所以可以用哈希算法，对图片内容取哈希值。我们对哈希值建立散列表，这样就可以通过哈希值以及散列表，快速判断图片是否存在。</p><p>我这里只说说我的思路，这个问题中还有详细的内存和硬盘的限制。要想给出更加详细的设计思路，还需要根据这些限制，给出一个估算。详细的解答，我都放在在哈希算法（下）那一节里到了，你可以自己回去看。</p><h2>实战测试题（六）</h2><p>我们知道，散列表的查询效率并不能笼统地说成是O(1)。它跟散列函数、装载因子、散列冲突等都有关系。如果散列函数设计得不好，或者装载因子过高，都可能导致散列冲突发生的概率升高，查询效率下降。</p><p>在极端情况下，有些恶意的攻击者，还有可能通过精心构造的数据，使得所有的数据经过散列函数之后，都散列到同一个槽里。如果我们使用的是基于链表的冲突解决方法，那这个时候，散列表就会退化为链表，查询的时间复杂度就从O(1)急剧退化为O(n)。</p><p>如果散列表中有10万个数据，退化后的散列表查询的效率就下降了10万倍。更直观点说，如果之前运行100次查询只需要0.1秒，那现在就需要1万秒。这样就有可能因为查询操作消耗大量CPU或者线程资源，导致系统无法响应其他请求，从而达到拒绝服务攻击（DoS）的目的。这也就是散列表碰撞攻击的基本原理。</p><p><strong>如何设计一个可以应对各种异常情况的工业级散列表，来避免在散列冲突的情况下，散列表性能的急剧下降，并且能抵抗散列碰撞攻击？</strong></p><h3>相关章节</h3><p><a href="https://time.geekbang.org/column/article/64233">18 | 散列表（上）：Word文档中的单词拼写检查功能是如何实现的？</a></p><p><a href="https://time.geekbang.org/column/article/64586">19 | 散列表（中）：如何打造一个工业级水平的散列表？</a></p><h3>题目解析</h3><p>我经常把这道题拿来作为面试题考察候选人。散列表可以说是我们最常用的一种数据结构了，编程语言中很多数据类型，都是用散列表来实现的。尽管很多人能对散列表都知道一二，知道有几种散列表冲突解决方案，知道散列表操作的时间复杂度，但是理论跟实践还是有一定距离的。光知道这些基础的理论并不足以开发一个工业级的散列表。</p><p>所以，我在散列表（中）那一节中详细给你展示了一个工业级的散列表要处理哪些问题，以及如何处理的，也就是这个问题的详细答案。</p><hr></hr><p>这六道题你回答得怎么样呢？或许你还无法100%回答正确，没关系。其实只要你看了解析之后，有比较深的印象，能立马想到哪节课里讲过，这已经说明你掌握得不错了。毕竟想要完全掌握我讲的全部内容还是需要时间沉淀的。对于这门课的学习，你一定不要心急，慢慢来。只要方向对了就都对了，剩下就交给时间和努力吧！</p><p>通过这套题，你对自己的学习状况应该有了一个了解。从专栏开始到现在，三个月过去了，我们的内容也更新了大半。<strong>你在专栏开始的时候设定的目标是什么？现在实施得如何了？<strong>你可以在留言区给这三个月的学习做个</strong><span class="orange">阶段性学习复盘</span></strong>。重新整理，继续出发！</p><p><img src="https://static001.geekbang.org/resource/image/8e/d3/8e603e3d795fc0ab2698f6f5eabf14d3.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/89/5d/a607659a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">　　　　　　　　</span>
+                            </div>
+                            <div class="bd">老师是高手，把这么多其他人甚至课本上讲的蹩脚难懂的知识，娓娓道来，深入浅出。<br>买了这门课一开始没怎么看，最近两天有空就看，觉得是一种享受！ <br></div>
+                            <span class="time">2018-12-21 12:33</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/eb/b0/2af13c30.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">陈阿票</span>
+                            </div>
+                            <div class="bd">基本上一下子都知道用什么数据结构和算法去解决，但是实际代码我肯定写不出来，心里总有一种纸上谈兵的感觉。 <br></div>
+                            <span class="time">2018-12-21 10:32</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/ec/0d/43d46889.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">alic</span>
+                            </div>
+                            <div class="bd">这门课程以后也会反复看的，希望老师也不要因为掉队人多了就松懈了，加油。 <br></div>
+                            <span class="time">2018-12-22 17:03</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/58/a7/7c972eb1.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">jiemoon</span>
+                            </div>
+                            <div class="bd">老师，像那个猎头的题目，用多个数据结构的话，更新操作会出现数据不一致的情况？ <br></div>
+                            <span class="time">2018-12-21 08:56</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">加个锁？主要还是看操作是不是对数据一致性敏感吧</p>
+                                <p class="reply-time">2018-12-21 09:43</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/c7/dc/9408c8c2.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">ban</span>
+                            </div>
+                            <div class="bd">把取出来的10个订单放到优先级队列中，取出最大值（也就是大顶堆堆顶数据），就是全局金额最大的订单。然后再从这个全局金额最大订单对应的数据库中，取出下一条订单（按照订单金额从大到小排列的），然后放到优先级队列中。一直重复上面的过程。<br><br>老师这段话我看到好多遍，想了好多次一直没搞懂，为什么取出最大金额的数据库查到下一条订单放到队列能理解，但是下次重复这个过程还是从队列中取出最大金额的下一个订单，这样每次最大的金额不是同一个吗，取出的订单还是同一个？<br><br>还有另外一个问题就是全部取出来后怎么判断这个队列是 top k的订单金额？<br><br>第二次回复，求老师讲解，自己研究好久没搞透 <br></div>
+                            <span class="time">2018-12-22 21:26</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/f5/05/d6547381.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">才才</span>
+                            </div>
+                            <div class="bd">还得看好几遍，还得练习 <br></div>
+                            <span class="time">2018-12-21 15:05</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/21/66/f9125286.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">keshawn</span>
+                            </div>
+                            <div class="bd">第一题：可以使用散列表加有序跳跃表结合，类似于LinkedHashMap的结构，只是链表换成了有序跳跃表。这样的话比散列表和有序链表各存一份数据结点要好一点。<br>第二题：使用大顶堆求Top K，这里说下可以优化的点。<br>1.首先是分别从10个库select orderby amout desc limit K可以使用流式查询<br>2.大顶堆的size可以设置为K<br>3.创建一个小顶堆在大顶堆开始记录最深层的子节点的时候开始记录<br>4.当大顶堆是满的时候，查询到的数据如果小于等于最小值，中断流式查询。<br>5.当大顶堆是满的时候，查询到的数据如果大于最小值，和最小值做替换，自下往上堆化，更新小顶堆 <br></div>
+                            <span class="time">2019-01-11 16:36</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/5c/cb/3ebdcc49.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">怀特</span>
+                            </div>
+                            <div class="bd">实战测试题一：<br>其实算法问题，可以笼统的归纳为：数据以及数据之上的索引。<br>有的数据是自带索引的，比如数组其实自带了下标的索引<br>如果数据没有索引，就需要自建索引。如果我们自己建，那就是采取各种数据结构来构造一个索引；否则，比如据库的索引，也是建了与数据分离的索引的数据结构。<br>从这个角度讲：<br>1、根据id来查找猎头信息： 猎头信息存储到数组中就可以，这样很快<br>2、根据积分来查找猎头信息：可以旁边建立基于积分的数组来作为索引，节点数据就是猎头id<br>这样：<br>1、猎头信息存储在数组中<br>2、自建一个索引，分别是 积分+id的有序数组<br>注意积分变化时维护自建索引的有效性，就可以了。<br>这样没有用高深的数据结构，可能会费一些内存和费一些cpu，但实现简单，基本够用了，比较通用。 <br></div>
+                            <span class="time">2019-01-09 13:04</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/04/b5/8bc4790b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Geek_987169</span>
+                            </div>
+                            <div class="bd">老师，猎头的例子有一点想不明白，每一个索引节点增加一个span，事实上每个索引节点有一个指向后续节点的数组（forwards），那么就是&quot;指向的下一个节点&quot;并不是唯一的，所以是不是每个索引节点也要有和后续节点数组对应的一个span数组啊，这样才能准确的知道向后走几步啊？望老师解惑！！！ <br></div>
+                            <span class="time">2019-01-04 18:37</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小情绪</span>
+                            </div>
+                            <div class="bd">一节一节跟到现在、每次遇到困难都会努力跨越，从看不明白到能够理解的时候，心里面突然会觉得想要看懂真的不难，一定要勤思考，多总结。当然看懂和灵活运用是完全不同的俩个层次。到现在的感觉就是：学会用数学或者说算法的思维去思考问题并解决问题。前段时间遇个一个很痛苦的问题、放到以前虽然想解决但是不一定有思路，通过这段时间的学习，最终将遇到的问题抽象化，并顺利解决。学会对问题进行抽象，找出痛点和规律真的是这段时间最大的收获，感谢王老师。 <br></div>
+                            <span class="time">2018-12-26 17:47</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/06/4f/de1e5a54.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Zero</span>
+                            </div>
+                            <div class="bd">永不掉队！ <br></div>
+                            <span class="time">2018-12-26 13:39</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/a1/07/abb7bfe3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">杨智晓 ✟</span>
+                            </div>
+                            <div class="bd">前面的数据结构算法都跟得上，后面从字符串匹配开始那些就跟不上了 <br></div>
+                            <span class="time">2018-12-25 17:45</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/2d/9e/fc2b8d02.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">elggum</span>
+                            </div>
+                            <div class="bd">学习的老师的这门课程，总有种相见恨晚的感觉，真正体悟到了算法之美。举重若轻，方为大师，老师真可谓大师。 <br></div>
+                            <span class="time">2018-12-25 15:11</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">哈哈哈 过奖了</p>
+                                <p class="reply-time">2018-12-26 21:04</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/ae/d6/6eeb7075.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">计科一班</span>
+                            </div>
+                            <div class="bd">代码写的少，还是比较虚啊，还是需要反复理解，动手写。 <br></div>
+                            <span class="time">2018-12-24 10:31</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/e9/27/2aa8fb31.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">dapaul</span>
+                            </div>
+                            <div class="bd">老师，我一直比较纳闷，什么时候先载入数据在内存中计算比较好，什么时候直接利用数据库的增删改查比较好。如在第一个案例的情景，如果数据一边在变动，我们一边要做题目要求的哪些操作，那我们是先把数据载入内存，后面的数据变动同步更新内存数据，然后做计算;还是直接利用数据库的增删改查操作比较好？ <br></div>
+                            <span class="time">2018-12-23 23:22</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/0e/e9/98b6ea61.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">竹林清风</span>
+                            </div>
+                            <div class="bd">老师讲的东西都理解了，也基本知道用什么方法解决。但估计是自己写代码比较少，感觉比较虚，看来需要多多实践写代码。 <br></div>
+                            <span class="time">2018-12-23 21:05</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/40/10/b6bf3c3c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">纯洁的憎恶</span>
+                            </div>
+                            <div class="bd">能回忆起来每道题是源自哪个算法知识点或哪个章节的，相关的处理思路也能回忆起来，不过很多细节不看看之前文章真是忘了。 <br></div>
+                            <span class="time">2018-12-23 20:55</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/41/87/cc6d5451.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Better me</span>
+                            </div>
+                            <div class="bd">报老师的课时，就是想着能够去学习下基础的数据结构和算法，加深对它们的理解并尝试如何在开发中使用到它们，到现在基本的数据结构和算法基本上都了解，但在如何使用上可能还有点欠缺，希望能跟紧老师的步伐，加强自己的实际应用能力。 <br></div>
+                            <span class="time">2018-12-23 09:39</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJZuwMDaoJviaf3lZ5BOgAvTzLzmbGrMrCZ22krLSRyxpKUrVicU9pSnWsyuSHjksyNldBpXrRzUqeA/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">挨踢菜鸟</span>
+                            </div>
+                            <div class="bd">老师，我想问一下，您除了讲数据结构之外，本专栏之后还会讲一些其他的吗，比如设计模式之类的，看您的课程真是一种享受，非常期待您其他的专栏 <br></div>
+                            <span class="time">2018-12-23 08:52</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/88/21/50b2418a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">alan</span>
+                            </div>
+                            <div class="bd">老师的讲解水平真的很厉害，感谢！ <br></div>
+                            <span class="time">2018-12-23 00:58</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

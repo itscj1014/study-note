@@ -1,0 +1,314 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x"></p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                用户故事讲Jerry银银：这一年我的脑海里只有算法
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/a4/f9/a4ef6721d194708989329fd7095ba7f9.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <blockquote>
+<p>比尔·盖茨曾说过：“如果你自以为是一个很好的程序员，请去读读Donald E. Knuth的《计算机程序设计艺术》吧……要是你真把它读下来了，就毫无疑问可以给我递简历了。”虽然比尔·盖茨推荐的是《计算机程序设计艺术》这本书，但是本质却折射出了算法的重要性。</p>
+</blockquote><p>大家好，我是Jerry银银，购买过算法专栏的同学应该时不时会看到我的留言！目前我是一名Android应用开发工程师，主要从事移动互联网教育软件的研发，坐标上海。</p><h2>我为何要学算法？</h2><p>细细想来，从毕业到现在，7年多的时间，我的脑海里一直没有停止过思考这样一个问题：<strong>技术人究竟能够走多远，技术人的路究竟该如何走下去</strong>？相信很多技术人应该有同样的感受，因为技术的更新迭代实在是太快了，但是我心里明白：<strong>我得为长远做打算，否则，就算换公司、换工作，可能本质也不会有什么改变</strong>。</p><p>但是，我其实不太清楚自己到底应该往什么地方努力。于是，我翻阅了好多书籍，搜寻IT领域各种牛人的观点。多方比较之后，我终于决定，从基础开始，从计算机领域最基础、最重要的一门课开始。毫无疑问，这门课就是数据结构和算法。</p><h2>我是如何遇见极客时间的？</h2><p>既然找到了方向，那就开始吧。可是问题来了，从哪儿开始呢？大方向虽然有了，可是具体的实现细节还是得慢慢摸索。大学没怎么学，工作这么多年也没有刻意练习，起初我还真不知道从哪儿开始，只是买了本书，慢慢地啃，也找了一些简单的题目开始做。有过自学经历的同学，应该有同感吧？刚开始连单链表翻转这样简单的题都要折腾半天，真心觉得“痛苦”。</p><!-- [[[read_end]]] --><p>之前我在极客时间上订阅过“Java核心技术36讲”，体会到了专栏和书本的不同。极客时间的专栏作者都是有着丰富的一线开发经验，能很好地把知识和实战结合在一起的大牛。这些课听起来非常爽。估计你应该经常跟我一样感叹：“哦！原来这些知识还可以这么使用！”当时我就在想，极客时间啥时候有一门算法课就好了。</p><p>说来真是巧，没多久，极客时间就推出了“数据结构与算法之美”。我试读了《为什么要学习数据结构和算法》和《数组：为什么很多编程语言中数组都从0开始编号？》这两篇之后，立即购买了。</p><p>到现在，专栏学完了，但是我依然记得，王争老师在《为什么要学习数据结构和算法》这篇文章里面提到的三句话，因为这每一句话都刺痛了我的小心脏！</p><blockquote>
+<p>第一句：业务开发工程师，你真的愿意做一辈子CRUD Boy吗？<br>
+第二句：基础架构研发工程师，写出达到开源水平的框架才是你的目标！<br>
+第三句：对编程还有追求？不想被行业淘汰？那就不要只会写凑合能用的代码！</p>
+</blockquote><h2>我每天是怎么学专栏的？</h2><p>于是，每天早上醒来，我的第一件事就是听专栏！专栏在每周的一、三、五更新，每周的这三天早上，我会听更新的文章。其它时间，我就听老的文章，当作复习。</p><p>听的过程，我一般会分这么几种情况。</p><p><strong>第一种情况，更新的内容是我之前就已经学过的，基本已经掌握了的</strong>。这种情况下，听起来相对轻松点，基本上听一遍就够了。起床之后，再做一下老师给的思考题。这种情况在专栏的基础部分出现得比较多，像数组、链表、栈、队列、哈希表这些章节，我基本上都是这么过来的。</p><p><strong>第二种情况，更新的内容是我学过的，但是还不太精通的</strong>。这种情况下，王争老师讲的内容都会将我的认知往前“推进”一步。顺利的话，我会在上班之前就搞懂今天更新的内容。这种情况是曾经没有接触过的内容，但是整体来说不难的理解的，比如跳表、递归等。</p><p><strong>还有一种情况，就是听一篇不够，听完再看一遍也不行，上午上班之前也搞不定的</strong>。不过，我也不会急躁。我心里知道，我可能需要换换脑子，说不定，在上午工作期间，灵感会突然冒出来。这种情况一般出现在红黑树、字符串查找算法、动态规划这些章节。</p><p>到了中午休息时间，我会一个人在公司楼下转一圈，同样，还是听专栏、看专栏。</p><p>如果今天的文章，早上已经搞定了，我会重新看下其他同学的留言，看看其他同学是如何思考文章的课后思考题的，还有就是，我会看看其他同学学习过程中，会有哪些疑问，这些疑问自己曾经是否遇到过，现在是否已经完全解决了。</p><p>如果今天的文章，早上没有彻底搞懂，这种情况下，我会极力利用中午的时间去思考。</p><p>晚上的时间通常无法确定，我有时候会加班到很晚，回到家，再去啃算法，效率也不高。所以，我一般会在晚上“看”算法。为什么我会用双引号呢？是因为我真得只是“看”，目的就是加深印象。</p><p>以上基本是我工作日学专栏的“套路”。</p><p>等到了周末或者其它节假日，就是“打攻坚战”的时候了。估计很多上班族和我一样，只有周末才有大量集中思考的时间。这时候，我一般会通过做题来反向推动自己的算法学习。</p><p>像红黑树、Trie树、递归、动态规划这些内容，我都是在周末和节假日搞懂的。虽然到现在对其中一些知识还不能达到游刃有余的地步，但是对一般的问题，大体上我都知道该如何抽象、如何拆解了。</p><p><img src="https://static001.geekbang.org/resource/image/0c/72/0c441ee9376e974f5112eab4dd7b2672.jpg" alt=""></p><p><img src="https://static001.geekbang.org/resource/image/ef/27/ef0c2d2cbde571905fde6ebf72913a27.jpg" alt=""></p><center><span class="reference">我在学习算法时记的笔记</span></center><h2>通过学习专栏，我有什么不一样的收获？</h2><p><strong>首先，专栏学习拓宽了我的知识面。</strong>例如，很多书本不讲的跳表，王争老师用了一篇文章来讲解。犹记得当我看完跳表时，心想，这么简单、易懂、高效的数据结构，为什么很多书籍都没有呢？这个专栏真的买值了！</p><p><strong>其次，专栏的理论和实践结合很强。</strong>书籍是通用性很强的教材，一般很少会涉及软件系统是如何使用具体的数据结构和算法的。在专栏中，老师把对应的知识和实践相互结合，听起来特别过瘾！比如堆这种数据结构，理解起来不难，但是要用好它，还得下点功夫，经过老师一讲解，搭配音频，我的理解也变得更加深入了。</p><p><strong>最后，专栏留言这个功能真的太好了，为自学带来了诸多便利，也让我获得了很多正向反馈。</strong>很多时候，经过相当长的一段时间思考，还是不能打通任督二脉，其实后来回想，当时就差那一层窗户纸了。于是，我在文末留下了自己的疑问，结果王争老师轻描淡写一句话我就明白了。</p><p>留言功能还有个非常大的好处。如果你用心学习，用心思考，用心留言，你的留言很大概率会被同伴点赞，很多时候还能被置顶。这本身就是一种正向反馈，也会更加促进自己的学习动力。还有一种更爽的体验，突然有一天早上，我照例醒来听专栏，突然听到了自己的名字。这个专栏4万多人订阅，老师居然记得我！可见王争老师真的认真看了每一条留言。</p><p>最后，我总结下自己学这个专栏的收获。尽管很多，但是我想用三句话来概括。</p><p>第一，写代码的时候，我会很自然地从时间和空间角度去衡量代码的优劣，时间、空间意识被加强了很多。</p><p>第二，学习算法的过程，有很多的“痛苦”，也正是因为这些“痛苦”，我学到了很多知识以外的东西。</p><p>第三，过程可能比知识更重要。要从过程中体会成长和精进的乐趣，而知识是附加产品！</p><p>专栏虽然结束，但是学习并没有结束。同学们，我们开头见！</p><p><img src="https://static001.geekbang.org/resource/image/8e/d3/8e603e3d795fc0ab2698f6f5eabf14d3.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/63/14/06eff9a4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Jerry银银</span>
+                            </div>
+                            <div class="bd">今天的文章是我个人新年开工收到的最大红包 <br></div>
+                            <span class="time">2019-02-13 08:28</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/e6/75/0637f70d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">吴庆</span>
+                            </div>
+                            <div class="bd">深有同感。 我也是一个毕业7年的嵌入式初级软件工程师，绕了一大圈才发现基础理论知识是何等重要。<br><br>吴军老师说过：<br>基础理论知识是一个人的基线，理论越强基线越高。再为自己定一个目标和向上攀附的阶梯，那么达到目标就是时间问题。<br>而很多野路子工程师搞了半辈子也未达到优秀工程师的基线。很多他们绞尽脑汁得出的高深学问，不过是正规工程师看起来很自然的东西。<br><br>关于工程师发展路线，或是成长阶段，吴军老师给出了一个参考(每一级能力相差一个数量级):<br>- 第五级： 能独立解决问题完成工程工作<br>  - 熟练应用工程知识和技能，无需他人指导，根据分配的需求完成任务。<br>- 第四级： 能指导和带领其他人一同完成更有影响力的工作<br>  - 根据大需求确立目标以及实现方式，并将解决方案进行分解，领导团队(分配、协调、沟通等)完成此目标<br>- 第三级： 能独立设计和实现产品，并且在市场上获得成功<br>  - 充分了解行业，提炼需求，并独立领导团队完成产品研发。随后可以将其量产化并营销至市场。<br>- 第二级： 能设计和实现别人不能做出的产品，具有不可替代性<br>  - 对行业有深入认知和独特见解，能够做出先前没有的产品，且别人无法复制。<br>- 第一级： 能开创一个产业<br>  - 站在科技最前沿，充分认识哪些科研成果已经成熟，在当前时代已经被满足，并将其产业化，形成巨大的生态链 <br></div>
+                            <span class="time">2019-02-13 08:47</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/bf/84/4ebde1d0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">广洲</span>
+                            </div>
+                            <div class="bd">我也是通过Jerry银银的分享购买的专栏，我目前是在自学，刚起步的，学习的很痛苦、很吃力。但相对培训班那两万块的学费，我们这个专栏太值了。感谢王老师，感谢Jerry银银。 <br></div>
+                            <span class="time">2019-02-13 07:34</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/40/10/b6bf3c3c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">纯洁的憎恶</span>
+                            </div>
+                            <div class="bd">我本硕都是计算机专业，但工作却属于第二次工业革命就已经存在的传统工业领域。这几年，看着同学们在计算机领域一个接一个的实现财务自由，或在极客时间上开课，我深深的感到被时代抛弃了。同时也慢慢发现选择有时候真的比很多自己过去重视的东西更重要，而且没得选很可能也是一种优势。回去是不可能了，以我的年纪与天赋，很难带着数年的劣势去和新一代的工程师竞争。本应置身浪潮之中，却在智能时代掉队，既令人遗憾，也使人恐惧。<br><br>下面的路该怎么走？这是无论多么焦虑都要面对的问题。智能时代是变革的时代，在新生产力的驱动下，一些旧业态将被淘汰，新产业出现，还有一些传统产业被重新塑造、如虎添翼。投身于最新生产力的创造，无遗更机会成为时代的弄潮儿。然而，使新生产力迸发出最惊人创造力的场景，往往是在与传统产业的结合上。第一次工业革命的“蒸汽机+传统产业”，第二次工业革命的“发电机+传统产业”，二战后信息革命的“电子化+传统产业”，本世纪初的“互联网+传统产业”，以及当下的“机器智能+传统产业”，都成为或将成为人类文明加速腾飞的推进器。也许这是我的选择被赋予的新使命，当然它需要千万人的共同努力。新的时代已经来临，无论我们愿不愿意。在这个时代，我们可以做技术的主人，可以做技术的仆人，也可以做“隐身人”，但唯独不能站在技术的对立面。我不能做技术的敌人，也不想做“隐身人”，那么我就要同技术站在一起。<br><br>从哪里开始？单纯的写写Java和Python代码，也许可以建立与智能时代联系，但它难以建立宏观、深刻、系统的时代体感。我认为要从最根本的地方入手，直接切入这个时代的“第一性原理”，也就是机器智能的“第一性原理”。算法与数据结构是机器的思维方式，依旧是智能时代的灵魂，这里应该是我再出发的起点。相应的还有计算机体系结构、计算机网络、操作系统，以及有关的数学知识体系。然而这些知识我在学校都学过，仅仅再回忆一遍就可以吗？不，这远远不够。因为我需要更系统的学习，需要知道这些知识在工业界的最新进展与实践，需要把这些知识连接到更广泛的行业领域中举一反三，需要能够判断哪些任务适合交给机器而哪些还不能，需要引发更多有价值的深入思考……很幸运我遇到了极客时间。<br><br>带着问题学习、用学到的知识解决实际问题，是最高效的学习方法。记得在学校学习算法与数据结构的时候，我实在无法理解这些反直觉的机器逻辑，能够理解的知识点非常有限，更不用说形成完备知识体系了。更可惜的是，那时心浮气躁，没有沉下心由浅入深，却靠疯狂做题刷存在感，以题量衡量学习水平，实则是狗熊掰棒子、只见树木不见森林，更很少能与工业场景建立联系。走出校园后没有优质的学习环境，缺乏有效学习渠道，再想“补课”就难了。极客时间提供了比较优质的环境与渠道，降低了领域间的信息门槛，使我能够接触到一线工程师与技术人员的新视角，与工业界建立一定的联系。在这里计算机知识不是数字游戏与考试题，而是一个个真实的工程问题，有助于引导建立时代体感。<br><br>师傅领进门修行在个人。然而想学好算法与数据结构，乃至于达到个人目标，仅仅啃一遍王争老师的课是远远不够的。这是一个很好的开始，它很重要，但也只是一个开始，后面的路还要靠自己。这个时代没有地图，也没有路标，只有广阔的天地和一块指南针。那么就从更多的接触、更加系统的学习、更加深入的思考，以及第二遍阅读《算法与数据结构之美》开始吧。 <br></div>
+                            <span class="time">2019-02-13 15:38</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/3IAJeiapYnr5UuqwQqB7N7gYL71vLnUEibxAeOalsGw4bALEOkhoQMVc3bJ1ZTjL1gTTQmPwQgUfEfR5cnZeMo5g/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">abner</span>
+                            </div>
+                            <div class="bd">半年时间过去了，我也是开始掉队的那一批，中后期开始慢慢赶上进度，虽然只是浏览了一遍，之后到现在开始从头仔细看，也结合着必知必会的30道题进行练习，感觉效果还是有的，接下来会投入更多的时间学习专栏，立个小目标：这周把必知必会30题做完，在2月底把专栏至少刷3遍。<br>另，老师开设这么好的一个专栏，真的谢谢! <br></div>
+                            <span class="time">2019-02-13 01:03</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/e4/e9/0dd3829f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">阿官(^･ｪ･^)</span>
+                            </div>
+                            <div class="bd">谢谢老师。谢谢Jerry的分享。 <br></div>
+                            <span class="time">2019-02-13 09:19</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/bc/a0/97c7679b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username"></span>
+                            </div>
+                            <div class="bd">我还以为我真太差了，看到你是安卓工程师，我就放心了😂😂 <br></div>
+                            <span class="time">2019-02-13 08:32</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/f0/89/2f95c866.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Zoctopus Zhang</span>
+                            </div>
+                            <div class="bd">在大学期间断断续续的学习了算法，参加了一些编程竞赛。本科毕业半年，在部门内算法老哥的指导下逐渐体会它在项目中的实际用途和神奇之处。<br>《数据结构和算法之美》是我在极客订阅的第一个专栏，我个人觉得看专栏和书的区别是——看书是一个人在看，而专栏里有老师的答疑，用户的相互探讨，集思广益。<br>半年时间过得很快，虽然专栏里的文章已经看过大半，但老师列出的课后练习和算法实战还没有完全掌握，专栏里的文章我仍需多次阅读。<br>谢谢老师！ <br></div>
+                            <span class="time">2019-02-13 09:56</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/69/88/1faea7b9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Anker</span>
+                            </div>
+                            <div class="bd">笔记做的漂亮呀 <br></div>
+                            <span class="time">2019-02-13 08:40</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJOc0n02eNKflX5ey4TYl1NBfb0kicc20AgayEAGDYylalqHnLTeqMnaJ2iaZsLVmqEo0T0YViadU9Ig/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">lianlian</span>
+                            </div>
+                            <div class="bd">王争老师早上好啊，我第一个订阅的极客时间专栏就是数据结构与算法之美，看到第一篇中您写着“基础知识就像是一座大楼的地基，它决定了我们技术的高度”，我感到很惊喜，两年多前我也跟人说过“基础不是100分考60分，而是建摩天大楼的地基。”哈哈(ಡωಡ)hiahiahia 我是2018年11月11号晚上吧知道这个专栏，当天信号不好，我等到凌晨一点多购买成功后，迫不及待听了2节课才睡觉。王争老师的专栏太棒了，内容价值远超价格。走路，吃饭，空闲，学而时习之，勤加练习，不亦乐乎！感谢王争老师的分享o(^o^)o <br></div>
+                            <span class="time">2019-02-13 08:39</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/e0/13/08735b5d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">$Jason</span>
+                            </div>
+                            <div class="bd">我也是掉队的那一批，学到20几的时候还是有点吃力，感觉之前学的都忘了，就又回头学，但是还是在排序那边绕的我很晕，学习很受挫。但是我不放弃，接着学。 <br></div>
+                            <span class="time">2019-02-13 08:22</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/15/50/c3/476c116f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">木之乃禾</span>
+                            </div>
+                            <div class="bd">我才开始学，感谢各位在章节留言里留下的leetcode题号。😄大家共同进步。 <br></div>
+                            <span class="time">2019-02-14 14:04</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/c7/53/a8b9ac81.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">何欢</span>
+                            </div>
+                            <div class="bd">我觉得光看这个专栏是远远不够的，还得结合书本系统的学习，还得翻来覆去的写代码，刻意的刷题，同学们一起努力吧。 <br></div>
+                            <span class="time">2019-02-13 23:38</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/6f/8f/b92f69a6.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">yohann</span>
+                            </div>
+                            <div class="bd">哈哈，我是在小飞机上关注的卖桃者说推荐买的课程。物有所值，很多算法之前看过名字但没了解过，极大地拓展我的数据结构与算法的思维。工作中的确自己手写数据结构与算法很少，基本都是调用包装好的API，用着爽但自己的算法思维会逐渐退化，要经常性地锻炼这方面地能力。学如逆水行舟，不进则退！大伙加油哦！ <br></div>
+                            <span class="time">2019-02-13 22:43</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/46/be/e4a75d5a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">sakura</span>
+                            </div>
+                            <div class="bd">看到前辈们的文章感触很多，自己是一个大三安卓开发，学校课基本上不咋听，上学期在百度实习，现在准备阿里面试，但是面试时候全问我的都是操作系统编译原理数据结构比较多，自己觉得老师这门课讲的很好，真的是循序渐进，有时候自己偷懒没看，就堆了一大堆课现在边准备面试继续复习老师的课，很谢谢老师和那些在留言区总结知识的人。 <br></div>
+                            <span class="time">2019-02-13 22:20</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/95/8e/e63c91ed.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">DasonCheng</span>
+                            </div>
+                            <div class="bd">感谢老师和同学的分享！也来谈谈我个人对成长的，暂不成熟的小认识：<br><br>人生道路上我们不断优化自己的信息源，初级阶段更多的是接收已有的信息，比如以接受教育开始，利用大块时间系统性学习新知识，构建某一领域的知识大厦。后期更多的是思考与使用，在接收新信息的同时，归纳总结到之前构建的属于自己的知识殿堂，这一阶段知识不在单纯是知识，融合为可以提高效率，运用自如的“智慧”。<br><br>另外也向老师和同学们提一些问题：<br><br>- 在社区、社交（twitter、 medium、quora、reddit）等互联网平台上有哪些值得关注的人、blog、或专栏<br>- 网络上大部分内容是讲“怎么用”，对于入门来说这些知识确实有用，但是在爬坡的时候，原理性的“为什么”及历史脉络更有用处，这类“为什么”的信息源有那写<br><br> <br></div>
+                            <span class="time">2019-02-13 18:15</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/18/d0/49b06424.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">qinggeouye</span>
+                            </div>
+                            <div class="bd">经常看见老哥的留言 相当优秀 👏 <br></div>
+                            <span class="time">2019-02-13 11:50</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/df/c9/228225d6.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Beer.D</span>
+                            </div>
+                            <div class="bd">学习的榜样啊，兴趣是最好的老师。 <br></div>
+                            <span class="time">2019-02-13 11:29</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/43/24/3f9f7c70.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">zixuan</span>
+                            </div>
+                            <div class="bd">厉害厉害，非常扎实。另外你的字写得好😄。 <br></div>
+                            <span class="time">2019-02-13 10:55</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/f2/aa/c04fda0e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">失火的夏天</span>
+                            </div>
+                            <div class="bd">没想到大佬们好像也在同一个水平线上，自己在树啊，图啊哪一块本来还是同步学习的，结果进入具体数据结构应用的时候，每天都加班到很晚，整个人累的不行，也就是上班的路上看看老师的专栏，有些东西也是有点懵的，后来也没怎么深究了，导致后面的应用就有些落下了。<br><br>不过也如同老师所说，练习数据结构和算法，有一种成就感。收获的不只是技能，更多的是思维和基本功，还有自信心 <br></div>
+                            <span class="time">2019-02-13 10:18</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

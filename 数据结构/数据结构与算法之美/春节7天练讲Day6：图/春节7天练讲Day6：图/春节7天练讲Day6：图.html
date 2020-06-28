@@ -1,0 +1,281 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x"></p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                春节7天练讲Day6：图
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/73/5a/73aa5274baca978b7cda07e375322c5a.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是王争。初六好！</p><p>为了帮你巩固所学，真正掌握数据结构和算法，我整理了数据结构和算法中，必知必会的30个代码实现，分7天发布出来，供你复习巩固所用。今天是第六篇。</p><p>和之前一样，你可以花一点时间，来手写这些必知必会的代码。写完之后，你可以根据结果，回到相应章节，有针对性地进行复习。做到这些，相信你会有不一样的收获。</p><hr></hr><h2>关于图的几个必知必会的代码实现</h2><h3>图</h3><ul>
+<li>
+<p>实现有向图、无向图、有权图、无权图的邻接矩阵和邻接表表示方法</p>
+</li>
+<li>
+<p>实现图的深度优先搜索、广度优先搜索</p>
+</li>
+<li>
+<p>实现Dijkstra算法、A*算法</p>
+</li>
+<li>
+<p>实现拓扑排序的Kahn算法、DFS算法</p>
+</li>
+</ul><h2>对应的LeetCode练习题（@Smallfly 整理）</h2><ul>
+<li>Number of Islands（岛屿的个数）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/number-of-islands/description/">https://leetcode.com/problems/number-of-islands/description/</a></p><p>中文版：<a href="https://leetcode-cn.com/problems/number-of-islands/description/">https://leetcode-cn.com/problems/number-of-islands/description/</a></p><ul>
+<li>Valid Sudoku（有效的数独）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/valid-sudoku/">https://leetcode.com/problems/valid-sudoku/</a></p><!-- [[[read_end]]] --><p>中文版：<a href="https://leetcode-cn.com/problems/valid-sudoku/">https://leetcode-cn.com/problems/valid-sudoku/</a></p><hr></hr><p>做完题目之后，你可以点击“请朋友读”，把测试题分享给你的朋友，说不定就帮他解决了一个难题。</p><p>祝你取得好成绩！明天见！</p><p><img src="https://static001.geekbang.org/resource/image/8e/d3/8e603e3d795fc0ab2698f6f5eabf14d3.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kai</span>
+                            </div>
+                            <div class="bd">实现图的深度优先搜索、广度优先搜索:<br><br>import java.util.ArrayList;<br>import java.util.HashSet;<br>import java.util.LinkedList;<br>import java.util.Queue;<br><br>public class BFSAndDFS {<br><br>    class Node {<br>        public int value; &#47;&#47;Node 值<br>        public int in;    &#47;&#47;入度：指向该节点的边有几条<br>		public int out;   &#47;&#47;出度：指向其他节点的边有几条<br>		public ArrayList&lt;Node&gt; nexts;<br>		public ArrayList&lt;Edge&gt; edges;<br><br>		public Node(int value) {<br>			this.value = value;<br>			this.in = 0;<br>			this.out = 0;<br>			this.nexts = new ArrayList&lt;&gt;();<br>			this.edges = new ArrayList&lt;&gt;();<br>		}<br>	}<br>	<br>    public static void bfs(Node node) {<br>        if (node == null) {<br>            return;<br>        }<br><br>        Queue&lt;Node&gt; queue = new LinkedList&lt;&gt;();<br>        HashSet&lt;Node&gt; set = new HashSet&lt;&gt;();<br>        queue.add(node);<br>        set.add(node);<br>        while (!queue.isEmpty()) {<br>            Node cur = queue.poll();<br>            System.out.print(cur.value + &quot; &quot;);<br>            for (Node next : cur.nexts) {<br>                if (!set.contains(next)) {<br>                    queue.add(next);<br>                    set.add(next);<br>                }<br>            }<br>        }<br>    }<br><br>    public static void dfs(Node node) {<br>        if (node == null) {<br>            return;<br>        }<br><br>        Stack&lt;Node&gt; stack = new Stack&lt;&gt;();<br>        HashSet&lt;Node&gt; set = new HashSet&lt;&gt;();<br>        stack.push(node);<br>        set.add(node);<br>        System.out.print(node.value + &quot; &quot;);<br>        while (!stack.isEmpty()) {<br>            Node cur = stack.pop();<br>            for (Node next : cur.nexts) {<br>                if (!set.contains(next)) { <br>                    stack.push(cur);       <br>                    stack.push(next);<br>                    set.add(next);         <br>                    System.out.print(next.value + &quot; &quot;);<br>                    break;                <br>                }<br>            }<br>        }<br>    }<br>} <br></div>
+                            <span class="time">2019-02-11 10:54</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kai</span>
+                            </div>
+                            <div class="bd">今天根据老师的课程，总结了一下图的相关知识点，然后用代码实现了一下图的相关的算法，感觉图还是要难于其他数据结构，需要接着多练习~ <br></div>
+                            <span class="time">2019-02-10 13:02</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/50/99/44378317.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">李皮皮皮皮皮</span>
+                            </div>
+                            <div class="bd">图很复杂😢 <br></div>
+                            <span class="time">2019-02-10 08:07</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Nereus</span>
+                            </div>
+                            <div class="bd"><br>并查集—go实现<br>func numIslands(grid [][]byte) int {<br>	if len(grid) == 0 {<br>		return 0<br>	}<br><br>	N := len(grid)*len(grid[0]) + 1<br><br>	u := NewUnionSet(N)<br><br>	for i := 0; i &lt; len(grid); i ++ {<br>		for j := 0; j &lt; len(grid[i]); j ++ {<br>			if grid[i][j] == &#39;1&#39; {<br>				&#47;&#47; 联通下边<br>				if i+1 &lt; len(grid) {<br>					if grid[i+1][j] == &#39;1&#39; {<br>						u.join(i*len(grid[i])+j, (i+1)*len(grid[i])+j)<br>					}<br>				}<br><br>				&#47;&#47; 联通右边<br>				if j+1 &lt; len(grid[i]) {<br>					if grid[i][j+1] == &#39;1&#39; {<br>						u.join(i*len(grid[i])+j, i*len(grid[i])+j+1)<br>					}<br>				}<br>			} else {<br>				u.join(i*len(grid[i])+j, N-1)<br>			}<br>		}<br>	}<br><br>	return  u.counts() -1<br>}<br><br>type UnionSet []int<br><br>func NewUnionSet(n int) UnionSet {<br>	var u UnionSet<br>	u = make([]int, n)<br>	for i := 0; i &lt; len(u); i ++ {<br>		u[i] = i<br>	}<br>	return u<br><br>}<br><br>func (u UnionSet) find(i int) int {<br>	tmp := i<br>	for u[tmp] != tmp {<br>		tmp = u[tmp]<br>	}<br><br>	j := i<br>	for j != tmp {<br>		tt := u[j]<br>		u[j] = tmp<br>		j = tt<br>	}<br><br>	return tmp<br>}<br><br>func (u UnionSet) connected(i, j int) bool {<br>	return u.find(i) == u.find(j)<br>}<br><br>func (u UnionSet) counts() int {<br>	var count int<br>	for idx, rec := range u {<br>		if idx == rec {<br>			count++<br>		}<br>	}<br>	return count<br>}<br><br>func (u UnionSet) join(i, j int) {<br>	x, y := u.find(i), u.find(j)<br>	if x != y {<br>		if y &gt; x {<br>			u[x] = y<br>		} else {<br>			u[y] = x<br>		}<br>	}<br>}<br> <br></div>
+                            <span class="time">2019-02-14 17:34</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/69/4d/81c44f45.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">拉欧</span>
+                            </div>
+                            <div class="bd">Valid Sudoku（有效的数独）go语言实现<br><br>func isValidSudoku(board [][]byte) bool {<br><br>	isValid:=true<br>	for i:=0;i&lt;9;i++{<br>		for j:=0;j&lt;9;j++{<br>			if board[i][j]==&#39;.&#39; {<br>				continue<br>			}else{<br>				if !judgeLine(board,i,j){<br>					return false<br>				}<br>			}<br>		}<br>	}<br><br>	return isValid<br>}<br><br>func judgeLine(board [][]byte,i,j int) bool{<br>	hash:=make(map[byte]int,9)<br>	for k:=0;k&lt;9;k++{<br>		if board[i][k]!=&#39;.&#39;{<br>			if hash[board[i][k]]==0{<br>				hash[board[i][k]]=1<br>			}else{<br>				return false<br>			}<br>		}<br>	}<br>	hash=make(map[byte]int,9)<br>	for k:=0;k&lt;9;k++{<br>		if board[k][j]!=&#39;.&#39; {<br>			if hash[board[k][j]]==0{<br>				hash[board[k][j]]=1<br>			}else{<br>				return false<br>			}<br>		}<br>	}<br>	hash=make(map[byte]int,9)<br>	for m:=i&#47;3*3;m&lt;i&#47;3*3+3;m++{<br>		for n:=j&#47;3*3;n&lt;j&#47;3*3+3;n++{<br>			if board[m][n]!=&#39;.&#39;{<br>				if hash[board[m][n]]==0{<br>					hash[board[m][n]]=1<br>				}else{<br>					return false<br>				}<br>			}<br>		}<br>	}<br>	return true<br><br>}<br><br><br> <br></div>
+                            <span class="time">2019-02-14 14:18</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/69/4d/81c44f45.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">拉欧</span>
+                            </div>
+                            <div class="bd">Number of Islands（岛屿的个数）go语言实现，亲测通过：<br>func numIslands(grid [][]byte) int {<br><br>	isSearch:=make([][]int,len(grid))<br>	island:=0<br>	for i:=0;i&lt;len(isSearch);i++{<br>		isSearch[i]=make([]int,len(grid[0]))<br>	}<br>	for i,line:=range grid{<br>		for j,_:=range line{<br>			if isSearch[i][j]==0 &amp;&amp; grid[i][j]==&#39;1&#39;{<br>				Search(grid,isSearch,i,j)<br>				island++<br>			}<br><br>		}<br>	}<br>	return island<br>}<br><br>func Search(grid [][]byte,isSearch [][]int, i int,j int){<br>	if isSearch[i][j]==1{<br>		return<br>	}<br>	isSearch[i][j]=1<br>	if grid[i][j]==&#39;1&#39;{<br>		if i&gt;=1{<br>			Search(grid,isSearch,i-1,j)<br>		}<br>		if i&lt;len(grid)-1{<br>			Search(grid,isSearch,i+1,j)<br>		}<br>		if j&gt;=1{<br>			Search(grid,isSearch,i,j-1)<br>		}<br>		if j&lt;len(grid[0])-1{<br>			Search(grid,isSearch,i,j+1)<br>		}<br>	}else{<br>		return<br>	}<br>}<br> <br></div>
+                            <span class="time">2019-02-14 10:45</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/17/88/be4fe19e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">molybdenum</span>
+                            </div>
+                            <div class="bd">island 我用的深搜，把所有的1探索，用visited保存访问过访问的，搜索次数便是岛屿个数 <br></div>
+                            <span class="time">2019-02-11 13:10</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/07/8c/51401220.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小美</span>
+                            </div>
+                            <div class="bd">    岛屿数Java实现<br>public int numIslands(char[][] grid) {<br>        int m = grid.length;<br>        if (m == 0) return 0;<br>        int n = grid[0].length;<br>        <br>        int ans = 0;<br>        for (int y = 0; y &lt; m; ++y)<br>            for (int x = 0; x &lt; n; ++x)<br>                if (grid[y][x] == &#39;1&#39;) {<br>                    ++ans;<br>                    dfs(grid, x, y, n, m);<br>                }<br>        <br>        return ans;<br>    }<br>    <br>    private void dfs(char[][] grid, int x, int y, int n, int m) {<br>        if (x &lt; 0 || y &lt; 0 || x &gt;= n || y &gt;= m || grid[y][x] == &#39;0&#39;)<br>            return;<br>        grid[y][x] = &#39;0&#39;;<br>        dfs(grid, x + 1, y, n, m);<br>        dfs(grid, x - 1, y, n, m);<br>        dfs(grid, x, y + 1, n, m);<br>        dfs(grid, x, y - 1, n, m);<br>    } <br></div>
+                            <span class="time">2019-02-11 10:30</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/00/6f/aacb013d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">黄丹</span>
+                            </div>
+                            <div class="bd">已经初六啦，就快要到去学校的时间了，难受。<br>图的邻接矩阵表示法是使用一个二维数组int[0..n-1][0...n-1]来保存顶点和边的，对于无权图，1表示有边，0表示两个顶点没有变，有权图，值代表权重。<br>图的邻接表则是采用数组+链表的结构来表示的，数组里存的是顶点，链表存储的是边的信息，当然链表也可以换做二叉搜索树，散列表等高效查找的数据结构。<br>今天的两道leetcode题的解题思路和代码如下：<br>1.	Number of Islands （岛屿的个数）<br>解题思路：遍历数组，遇到1时，使用深度&#47;广度遍历，将连通的1都置为0，然后将岛屿个数加1.<br>代码：https:&#47;&#47;github.com&#47;yyxd&#47;leetcode&#47;blob&#47;master&#47;src&#47;leetcode&#47;graph&#47;Problem200_NumberofIslands.java<br>2.	Valid Sudoku  （有效的数独）<br>解题思路：emm，不知道为什么这道题要放在图论的专题下，我的解法就是横着一行行判断，竖着一列列的判断，然后每个3*3的子块进行判断。没有用到图的知识。<br>代码：https:&#47;&#47;github.com&#47;yyxd&#47;leetcode&#47;blob&#47;master&#47;src&#47;leetcode&#47;graph&#47;Problem36_ValidSudoku.java<br> <br></div>
+                            <span class="time">2019-02-10 23:05</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/94/47/75875257.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">虎虎❤️</span>
+                            </div>
+                            <div class="bd">基于临接表实现的联通分量求法， go 语言实现：<br>package graph_basics<br><br>type Components struct {<br>	graph   Graph<br>	visited []bool<br>	id      []int<br>	ccount  int<br>}<br><br>func InitComponents(g Graph) *Components {<br>	return &amp;Components{<br>		graph:   g,<br>		visited: make([]bool, g.V()),<br>		id:      make([]int, g.V()),<br>		ccount:  0,<br>	}<br>}<br><br>func (c *Components) dfs(index int) {<br>	c.visited[index] = true<br>	c.id[index] = c.ccount<br>	adj := c.graph.Iterator(index)<br>	for i := range adj {<br>		if !c.visited[adj[i]] {<br>			c.dfs(adj[i])<br>		}<br>	}<br>}<br><br>func (c *Components) CalculateComponents() {<br>	for i := 0; i &lt; c.graph.V(); i++ {<br>		if c.visited[i] {<br>			continue<br>		}<br>		c.dfs(i)<br>		c.ccount++<br>	}<br>}<br><br>func (c *Components) Count() int {<br>	return c.ccount<br>}<br><br>func (c *Components) IsConnected(p int, q int) bool {<br>	return c.id[p] == c.id[q]<br>}<br><br>临接表的实现：<br>package graph_basics<br><br>import &quot;fmt&quot;<br><br>type SparseGraph struct {<br>	v      int<br>	e      int<br>	direct bool<br>	g      [][]int<br>}<br><br>func InitSparseGraph(n int, direct bool) *SparseGraph {<br>	graph := make([][]int, n)<br>	return &amp;SparseGraph{<br>		v:      n,<br>		e:      0,<br>		direct: direct,<br>		g:      graph,<br>	}<br>}<br><br>func (sg *SparseGraph) V() int {<br>	return sg.v<br>}<br><br>func (sg *SparseGraph) E() int {<br>	return sg.e<br>}<br><br>func (sg *SparseGraph) AddEdge(p int, q int) {<br>	sg.g[p] = append(sg.g[p], q)<br>	if !sg.direct {<br>		sg.g[q] = append(sg.g[q], p)<br>	}<br><br>	sg.e++<br>}<br><br>func (sg *SparseGraph) HasEdge(p int, q int) bool {<br>	for i := 0; i &lt; len(sg.g[p]); i++ {<br>		if sg.g[p][i] == q {<br>			return true<br>		}<br>	}<br>	return false<br>}<br><br>func (sg *SparseGraph) Show() {<br>	for i := range sg.g {<br>		fmt.Printf(&quot;vertex %d :\t&quot;, i)<br>		for j := range sg.g[i] {<br>			fmt.Printf(&quot;%d\t&quot;, sg.g[i][j])<br>		}<br>		fmt.Println()<br>	}<br>}<br><br>func (sg *SparseGraph) Iterator(v int) []int {<br>	return sg.g[v]<br>} <br></div>
+                            <span class="time">2019-02-10 21:32</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/23/f6/1ef70cab.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">你看起来很好吃</span>
+                            </div>
+                            <div class="bd">岛屿个数python实现(广度优先搜索算法)：<br>def numIslands(self, grid):<br>    if not grid:<br>        return 0<br>        <br>    count = 0<br>    for i in range(len(grid)):<br>        for j in range(len(grid[0])):<br>            if grid[i][j] == &#39;1&#39;:<br>                self.dfs(grid, i, j)<br>                count += 1<br>    return count<br><br>def dfs(self, grid, i, j):<br>    if i&lt;0 or j&lt;0 or i&gt;=len(grid) or j&gt;=len(grid[0]) or grid[i][j] != &#39;1&#39;:<br>        return<br>    grid[i][j] = &#39;#&#39;<br>    self.dfs(grid, i+1, j)<br>    self.dfs(grid, i-1, j)<br>    self.dfs(grid, i, j+1)<br>    self.dfs(grid, i, j-1) <br></div>
+                            <span class="time">2019-02-10 16:07</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/7c/16/38c07a04.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">_CountingStars</span>
+                            </div>
+                            <div class="bd">有效的数独 go 语言实现<br>package main<br><br>import (<br>	&quot;fmt&quot;<br>)<br><br>func hasRepeatedNumbers(numbers []byte) bool {<br>	var numbersExistFlag [9]bool<br>	for _, num := range numbers {<br>		if num == &#39;.&#39; {<br>			continue<br>		}<br>		index := num - &#39;0&#39; - 1<br>		if numbersExistFlag[index] {<br>			return true<br>		}<br>		numbersExistFlag[index] = true<br>	}<br>	return false<br>}<br><br>func isValidSudoku(board [][]byte) bool {<br>	sudokuSize := 9<br>	sudokuUnitSize := 3<br>	for _, line := range board {<br>		if hasRepeatedNumbers(line) {<br>			return false<br>		}<br>	}<br><br>	for columnIndex := 0; columnIndex &lt; sudokuSize; columnIndex++ {<br>		columnNumbers := make([]byte, 0)<br>		for lineIndex := 0; lineIndex &lt; sudokuSize; lineIndex++ {<br>			columnNumbers = append(columnNumbers, board[lineIndex][columnIndex])<br>		}<br>		if hasRepeatedNumbers(columnNumbers) {<br>			return false<br>		}<br>	}<br><br>	sudokuUnitCountEachLine := sudokuSize &#47; sudokuUnitSize<br>	for i := 0; i &lt; sudokuUnitCountEachLine; i++ {<br>		for j := 0; j &lt; sudokuUnitCountEachLine; j++ {<br>			sudokuUnitNumbers := make([]byte, 0)<br>			for _, line := range board[i*3 : (i+1)*3] {<br>				sudokuUnitNumbers = append(sudokuUnitNumbers, line[j*3:(j+1)*3]...)<br>			}<br><br>			if hasRepeatedNumbers(sudokuUnitNumbers) {<br>				return false<br>			}<br>		}<br>	}<br><br>	return true<br>}<br><br>func main() {<br>	testData1 := [][]byte{<br>		{&#39;5&#39;, &#39;3&#39;, &#39;.&#39;, &#39;.&#39;, &#39;7&#39;, &#39;.&#39;, &#39;.&#39;, &#39;.&#39;, &#39;.&#39;},<br>		{&#39;6&#39;, &#39;.&#39;, &#39;.&#39;, &#39;1&#39;, &#39;9&#39;, &#39;5&#39;, &#39;.&#39;, &#39;.&#39;, &#39;.&#39;},<br>		{&#39;.&#39;, &#39;9&#39;, &#39;8&#39;, &#39;.&#39;, &#39;.&#39;, &#39;.&#39;, &#39;.&#39;, &#39;6&#39;, &#39;.&#39;},<br>		{&#39;8&#39;, &#39;.&#39;, &#39;.&#39;, &#39;.&#39;, &#39;6&#39;, &#39;.&#39;, &#39;.&#39;, &#39;.&#39;, &#39;3&#39;},<br>		{&#39;4&#39;, &#39;.&#39;, &#39;.&#39;, &#39;8&#39;, &#39;.&#39;, &#39;3&#39;, &#39;.&#39;, &#39;.&#39;, &#39;1&#39;},<br>		{&#39;7&#39;, &#39;.&#39;, &#39;.&#39;, &#39;.&#39;, &#39;2&#39;, &#39;.&#39;, &#39;.&#39;, &#39;.&#39;, &#39;6&#39;},<br>		{&#39;.&#39;, &#39;6&#39;, &#39;.&#39;, &#39;.&#39;, &#39;.&#39;, &#39;.&#39;, &#39;2&#39;, &#39;8&#39;, &#39;.&#39;},<br>		{&#39;.&#39;, &#39;.&#39;, &#39;.&#39;, &#39;4&#39;, &#39;1&#39;, &#39;9&#39;, &#39;.&#39;, &#39;.&#39;, &#39;5&#39;},<br>		{&#39;.&#39;, &#39;.&#39;, &#39;.&#39;, &#39;.&#39;, &#39;8&#39;, &#39;.&#39;, &#39;.&#39;, &#39;7&#39;, &#39;9&#39;}}<br>	fmt.Println(isValidSudoku(testData1))<br>} <br></div>
+                            <span class="time">2019-02-10 13:55</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/40/10/b6bf3c3c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">纯洁的憎恶</span>
+                            </div>
+                            <div class="bd">1.在邻接矩阵中找出连通图个数即可。在每个顶点执行DFS或BFS，执行次数即为岛屿数，也可以使用并查集。<br><br>2. 依次考察9✖️9数独各行各列是否有重复数字（可以用9位数组统计），然后再考察每个3✖️3子矩阵是否有重复数字。都没有则成功。 <br></div>
+                            <span class="time">2019-02-10 10:19</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/1d/13/31ea1b0b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">峰</span>
+                            </div>
+                            <div class="bd">island个数，从一个点从发，判断一个island的逻辑是如果本身点是water，那么必然不是island，如果是陆地，说明它能扩展成一个island，那么向上下左右进行扩展，然后再以扩展的陆地点又一直递归扩展，直到所有边界为0。而判断island的个数，就在此基础上去遍历所有点，并加上一个boolean[][]记录每个点是否已经被遍历或者扩展过。 <br></div>
+                            <span class="time">2019-02-10 10:03</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/ec/9d/4d705f03.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">C_love</span>
+                            </div>
+                            <div class="bd">Valid Sudoku<br><br>class Solution {<br>    public boolean isValidSudoku(char[][] board) {<br>        for (int row = 0; row &lt; 9; row++) {<br>            for (int col = 0; col &lt; 9; col++) {<br>                if (board[row][col] == &#39;.&#39;) continue;<br>                if (!isValid(board, row, col)) return false;<br>            }<br>        }<br>        return true;<br>    }<br>    <br>    private boolean isValid(char[][] board, final int row, final int col){<br>        char target=board[row][col];<br>        &#47;&#47;check rows<br>        for (int i = 0; i &lt; 9; i++) {<br>            if (i == row) continue;<br>            if (board[i][col] == target) return false;<br>        }<br>        <br>        &#47;&#47;check cols<br>        for (int i = 0; i &lt; 9; i++) {<br>            if (i == col) continue;<br>            if (board[row][i] == target) return false;<br>        }<br>        <br>        &#47;&#47;check 3*3<br>        int rowStart = row &#47; 3 * 3, colStart = col &#47; 3 * 3;<br>        for (int i = rowStart; i &lt; rowStart + 3; i++) {<br>            for (int j = colStart; j &lt; colStart + 3; j++) {<br>                if (i == row &amp;&amp; j == col) continue;<br>                if (board[i][j] == target) return false;<br>            }<br>        }<br>        <br>        return true;<br>    }<br>} <br></div>
+                            <span class="time">2019-02-10 09:56</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/04/9a/f2c0a206.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">ext4</span>
+                            </div>
+                            <div class="bd">有效的数独<br>class Solution {<br>  public:<br>    bool isValidSudoku(vector&lt; vector&lt;char&gt; &gt;&amp; board) {<br>      set&lt;char&gt; numset;<br>      for (int i = 0; i &lt; 9; i++) {<br>        numset.clear();<br>        for (int j = 0; j &lt; 9; j++) {<br>          char val = board[i][j];<br>          if (val != &#39;.&#39;) {<br>            if (numset.count(val) != 0) return false;<br>            numset.insert(val);<br>          }<br>        }<br>      }<br>      for (int j = 0; j &lt; 9; j++) {<br>        numset.clear();<br>        for (int i = 0; i &lt; 9; i++) {<br>          char val = board[i][j];<br>          if (val != &#39;.&#39;) {<br>            if (numset.count(val) != 0) return false;<br>            numset.insert(val);<br>          }<br>        }<br>      }<br>      for (int i = 0; i &lt; 3; i++) {<br>        for (int j = 0; j &lt; 3; j++) {<br>          numset.clear();<br>          for (int p = 0; p &lt; 3; p++) {<br>            for (int q = 0; q &lt; 3; q++) {<br>              char val = board[i * 3 + p][j * 3 + q];<br>              if (val != &#39;.&#39;) {<br>                if (numset.count(val) != 0) return false;<br>                numset.insert(val);<br>              }<br>            }<br>          }<br>        }<br>      }<br>      return true;<br>    }<br>}; <br></div>
+                            <span class="time">2019-02-10 09:35</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

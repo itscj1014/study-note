@@ -1,0 +1,351 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x"></p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                春节7天练讲Day7：贪心、分治、回溯和动态规划
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/c9/8d/c9683a523cd6ef4e8f574c26e9e5fc8d.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是王争。今天是节后的第一个工作日，也是我们“春节七天练”的最后一篇。</p><hr></hr><h2>几种算法思想必知必会的代码实现</h2><h3>回溯</h3><ul>
+<li>
+<p>利用回溯算法求解八皇后问题</p>
+</li>
+<li>
+<p>利用回溯算法求解0-1背包问题</p>
+</li>
+</ul><h3>分治</h3><ul>
+<li>利用分治算法求一组数据的逆序对个数</li>
+</ul><h3>动态规划</h3><ul>
+<li>
+<p>0-1背包问题</p>
+</li>
+<li>
+<p>最小路径和（详细可看@Smallfly整理的 Minimum Path Sum）</p>
+</li>
+<li>
+<p>编程实现莱文斯坦最短编辑距离</p>
+</li>
+<li>
+<p>编程实现查找两个字符串的最长公共子序列</p>
+</li>
+<li>
+<p>编程实现一个数据序列的最长递增子序列</p>
+</li>
+</ul><h2>对应的LeetCode练习题（@Smallfly 整理）</h2><ul>
+<li>Regular Expression Matching（正则表达式匹配）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/regular-expression-matching/">https://leetcode.com/problems/regular-expression-matching/</a></p><p>中文版：<a href="https://leetcode-cn.com/problems/regular-expression-matching/">https://leetcode-cn.com/problems/regular-expression-matching/</a></p><ul>
+<li>Minimum Path Sum（最小路径和）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/minimum-path-sum/">https://leetcode.com/problems/minimum-path-sum/</a></p><p>中文版：<a href="https://leetcode-cn.com/problems/minimum-path-sum/">https://leetcode-cn.com/problems/minimum-path-sum/</a></p><!-- [[[read_end]]] --><ul>
+<li>Coin Change （零钱兑换）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/coin-change/">https://leetcode.com/problems/coin-change/</a></p><p>中文版：<a href="https://leetcode-cn.com/problems/coin-change/">https://leetcode-cn.com/problems/coin-change/</a></p><ul>
+<li>Best Time to Buy and Sell Stock（买卖股票的最佳时机）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">https://leetcode.com/problems/best-time-to-buy-and-sell-stock/</a></p><p>中文版：<a href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/">https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/</a></p><ul>
+<li>Maximum Product Subarray（乘积最大子序列）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/maximum-product-subarray/">https://leetcode.com/problems/maximum-product-subarray/</a></p><p>中文版：<a href="https://leetcode-cn.com/problems/maximum-product-subarray/">https://leetcode-cn.com/problems/maximum-product-subarray/</a></p><ul>
+<li>Triangle（三角形最小路径和）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/triangle/">https://leetcode.com/problems/triangle/</a></p><p>中文版：<a href="https://leetcode-cn.com/problems/triangle/">https://leetcode-cn.com/problems/triangle/</a></p><hr></hr><p>到此为止，七天的练习就结束了。这些题目都是我精选出来的，是基础数据结构和算法中最核心的内容。建议你一定要全部手写练习。如果一遍搞不定，你可以结合前面的章节，多看几遍，反复练习，直到能够全部搞定为止。</p><p>学习数据结构和算法，最好的方法就是练习和实践。我相信这在任何知识的学习过程中都适用。</p><p>最后，祝你工作顺利！学业进步！</p><p><img src="https://static001.geekbang.org/resource/image/8e/d3/8e603e3d795fc0ab2698f6f5eabf14d3.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kai</span>
+                            </div>
+                            <div class="bd">听了老师的课程，第一遍的时候，只是在读，现在开始回顾：<br>课程相关的知识点，做了笔记：https:&#47;&#47;github.com&#47;guokaide&#47;algorithm&#47;blob&#47;master&#47;summary&#47;algorithm.md<br>课程涉及的题目，也在逐步总结当中：<br>https:&#47;&#47;github.com&#47;guokaide&#47;algorithm&#47;blob&#47;master&#47;questions&#47;questions.md<br><br>希望和大家一起进步，欢迎小伙伴们一起来讨论~<br> <br></div>
+                            <span class="time">2019-02-11 11:15</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kai</span>
+                            </div>
+                            <div class="bd">8皇后问题<br><br>public class EightQueen {<br><br>    private static final int QUEEN_NUMBER = 8;      &#47;&#47; 皇后个数<br>    private int[] columns = new int[QUEEN_NUMBER];  &#47;&#47; 每个皇后存储的列 (row, col), row天然不相等<br>    private int total = 0;<br><br>    public int solution() {<br>        queen(0);<br>        return total;<br>    }<br><br>    private void queen(int row) {<br>        if (row == QUEEN_NUMBER) {<br>            total++;<br>        } else {<br>            for (int col = 0; col != QUEEN_NUMBER; col++) {<br>                columns[row] = col;<br>                if (isPut(row)) {<br>                    queen(row+1);<br>                }<br>            }<br>        }<br>    }<br><br>    private boolean isPut(int row) {<br>         for (int i = 0; i != row; i++) {<br>             if (columns[row] == columns[i] || row - i == Math.abs(columns[row]-columns[i])) {<br>                 return false;<br>             }<br>         }<br>         return true;<br>    }<br><br>} <br></div>
+                            <span class="time">2019-02-11 10:55</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kai</span>
+                            </div>
+                            <div class="bd">动态规划，感觉是面试必考内容，今天跟着这些题目再来复习一遍~ <br></div>
+                            <span class="time">2019-02-11 00:38</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/50/99/44378317.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">李皮皮皮皮皮</span>
+                            </div>
+                            <div class="bd">每天一道算法题，风雨无阻（过年偷懒不算😛） <br></div>
+                            <span class="time">2019-02-11 11:15</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKiblmtfaXeROjBqr24aHRicY2JwrY1EGOAKfiaI9AEbzialTQyBibvF2SwjqWhmEhZv0zlQUAaxsLWeeA/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Richard</span>
+                            </div>
+                            <div class="bd">老师留的题都很不错，正在刷之前没做过的LeetCode题。<br>参与下答对三题送课程的活动:<br>Day 1：<br>1.求众数(Python)<br>class Solution:<br>    def majorityElement(self, nums):<br>        return sorted(nums)[len(nums) &#47;&#47; 2]<br>2.缺失的第一个正数(Golang)<br>func firstMissingPositive(nums []int) int {<br>    if len(nums) == 0 {<br>		return 1<br>	}<br><br>	var arr = make([]bool, len(nums)+1)<br>	var idx = 1<br>	for i := 0; i &lt; len(nums); i++ {<br>		if nums[i] &gt;= 0 &amp;&amp; nums[i] &lt; len(arr) {<br>			arr[nums[i]] = true<br>		}<br>	}<br><br>	for i := 1; i &lt; len(arr); i++ {<br>		if arr[i] == false {<br>			idx = i<br>			break<br>		} else {<br>			idx = i + 1<br>		}<br>	}<br><br>	return idx<br>}<br>Day 7:<br>3. 买卖股票的最佳时机(Python)<br>class Solution:<br>    def maxProfit(self, prices):<br>        if not prices:<br>            return 0<br>        min_price = prices[0]<br>        res = 0<br>        for i in prices[1:]:<br>            min_price = min(min_price, i)<br>            if res &lt; i - min_price:<br>                res = i - min_price<br>        return res<br> <br></div>
+                            <span class="time">2019-02-11 10:21</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/7c/16/38c07a04.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">_CountingStars</span>
+                            </div>
+                            <div class="bd">买卖股票的最佳时机 go 语言实现<br>package main<br><br>import &quot;fmt&quot;<br><br>func maxProfit(prices []int) int {<br>	max := -1<br>	for i := 0; i &lt; len(prices); i++ {<br>		for j := i + 1; j &lt; len(prices); j++ {<br>			profit := prices[j] - prices[i]<br>			if profit &gt; 0 &amp;&amp; profit &gt; max {<br>				max = profit<br>			}<br>		}<br>	}<br><br>	if max == -1 {<br>		return 0<br>	}<br><br>	return max<br>}<br><br>func main() {<br>	testData1 := []int{7, 1, 5, 3, 6, 4}<br>	testData2 := []int{7, 6, 4, 3, 1}<br><br>	fmt.Println(maxProfit(testData1))<br>	fmt.Println(maxProfit(testData2))<br>}<br> <br></div>
+                            <span class="time">2019-02-11 08:30</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/40/10/b6bf3c3c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">纯洁的憎恶</span>
+                            </div>
+                            <div class="bd">这冲刺压力有点大了😓 <br></div>
+                            <span class="time">2019-02-10 21:38</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/cf/f4/c1f41ff7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">吴...</span>
+                            </div>
+                            <div class="bd">&#47;&#47;零钱兑换<br>#include&lt;iostream&gt;<br>#include&lt;algorithm&gt;<br>using namespace std;<br>int coins[10];<br>int amount;<br>int k;&#47;&#47;k代表纸币的数目<br>int dp[20];&#47;&#47;代表面值最大，也可以采用动态扩容的方式 <br>int cmax = 32767;<br>int coinChange(int coins[],int amount){<br>	for(int i = 1;i &lt;= amount;i++){<br>		dp[i] = cmax;<br>		for(int j = 0;j &lt; k;j++){<br>			int t = coins[j];<br>			if(i &gt;= t &amp;&amp; coins[i - t] != cmax){<br>				dp[i] = min(dp[i - t] + 1,dp[i]);<br>			}<br>		}<br>	}<br>	if(dp[amount] &lt; cmax &amp;&amp; dp[amount] &gt; 0){<br>		return dp[amount];<br>	}<br>	else<br>		return -1;<br>}<br>int main(){<br>	k = 0;<br>	while(true){<br>		cin&gt;&gt;k;<br>		for(int i = 0;i &lt; k;i++){<br>			cin&gt;&gt;coins[i];<br>		} <br>		cin&gt;&gt;amount;<br>		cout&lt;&lt;coinChange(coins,amount)&lt;&lt;endl;<br>	}	<br>} <br></div>
+                            <span class="time">2019-02-14 20:18</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/cf/f4/c1f41ff7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">吴...</span>
+                            </div>
+                            <div class="bd">回溯0-1背包问题<br>#include&lt;iostream&gt;<br>using namespace std;<br>int v[10] = {2,2,4,6,3};<br>int M;&#47;&#47;代表背包的容积 <br>int n;<br>int cmax = 0;<br><br>void f(int w,int k){<br>&#47;&#47;	if(w == 0){<br>&#47;&#47;		if(w &gt; max) max = w;<br>&#47;&#47;	}<br>	if(w == M || k == n){<br>		if(w &gt; cmax) cmax = w;<br>		return ;<br>	} <br>	f(w,k + 1);<br>	if(w + v[k] &lt;= M){<br>		f(w + v[k],k + 1);<br>	}<br>}<br>int main(){<br>	&#47;&#47;v[] = {2,2,4,6,3};<br>	M = 9;<br>	n = 5;<br>	f(0,0);<br>	cout&lt;&lt;cmax&lt;&lt;endl;<br>} <br></div>
+                            <span class="time">2019-02-14 10:48</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/cf/f4/c1f41ff7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">吴...</span>
+                            </div>
+                            <div class="bd">#include&lt;iostream&gt;<br>#include&lt;cmath&gt;<br>using namespace std;<br><br>int queen[100];<br>int sum = 0;<br>int n;<br>void Print(){<br>	&#47;&#47;cout&lt;&lt;&quot;ss&quot;&lt;&lt;endl;<br>	for(int i = 0;i &lt; n;i++){<br>		cout&lt;&lt;&quot;(&quot;&lt;&lt;i+1&lt;&lt;&quot;,&quot;&lt;&lt;queen[i] + 1&lt;&lt;&quot;)&quot;;<br>	}<br>	sum++;<br>	cout&lt;&lt;endl;<br>}<br><br>void Queen(int queen[],int k){<br>	if(k == n) {<br>		Print(); <br>		&#47;&#47;return ;<br>	}<br>    int j = 0;<br>    for(int i = 0;i &lt; n;i++){<br>    	&#47;&#47;j = i;<br>    	for( j = 0;j &lt; k;j++){<br>    		if((queen[j] == i)||(abs(queen[j] - i) == abs(k - j)))<br>				break;<br>		}<br>		if(j == k){<br>			queen[k] = i;<br>			Queen(queen,k+1); <br>		}<br>	}<br>}<br>int main(){<br>	cin&gt;&gt;n;<br>	Queen(queen,0);<br>	cout&lt;&lt;sum&lt;&lt;endl;<br>} <br></div>
+                            <span class="time">2019-02-14 10:02</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/40/10/b6bf3c3c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">纯洁的憎恶</span>
+                            </div>
+                            <div class="bd">第一题，把39讲的代码改了一下。。。<br><br>public class Pattern {<br>  private boolean matched = false;<br>  private char[] pattern; &#47;&#47; 正则表达式<br>  private int plen; &#47;&#47; 正则表达式长度<br><br>  public Pattern(char[] pattern, int plen) {<br>    this.pattern = pattern;<br>    this.plen = plen;<br>  }<br><br>  public boolean match(char[] text, int tlen) { &#47;&#47; 文本串及长度<br>    matched = false;<br>    if (pattern[0]=&#39;*&#39;)<br>           return matched;<br>   int i = 0;<br>   int j = 0;<br>   while (i&lt;=plen&amp;&amp;j&lt;=tlen&amp;&amp;pattern[i]!=text[j]&amp;&amp;pattern[i]!=&#39;.&#39;)<br>         i++;<br>    rmatch(0, 0, text, tlen);<br>    return matched;<br>  }<br><br>  private void rmatch(int ti, int pj, char[] text, int tlen) {<br>    if (matched) return; &#47;&#47; 如果已经匹配了，就不要继续递归了<br>    if (ti == tlen){ &#47;&#47;文本串到结尾了<br>      matched = true; <br>      return;<br>    }<br>    if (pattern[pj] == &#39;*&#39;) { &#47;&#47; * 匹配任意个字符<br>      for (int k = 0; k &lt;= tlen-ti&amp;&amp;tex[ti+k]==text[ti]; ++k) {<br>        rmatch(ti+k, pj+1, text, tlen);<br>      }<br>    } else if (pattern[pj] == &#39;.&#39;) { &#47;&#47; . 匹配 0 个或者 1 个字符<br>      rmatch(ti, pj+1, text, tlen); <br>      rmatch(ti+1, pj+1, text, tlen); <br>    } else if (ti &lt; tlen &amp;&amp; pattern[pj] == text[ti]) { &#47;&#47; 纯字符匹配才行<br>      rmatch(ti+1, pj+1, text, tlen);<br>    }<br>  }<br>} <br></div>
+                            <span class="time">2019-02-12 11:13</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/LkBg3zsF2aNAN0TiagNUAohQpCxWYs1yzvSkrww6C3Wy6smCH4K5ShYg2KQRHmbW8YL2ibWxPXtuickXJUC2gib8oQ/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">卡罗</span>
+                            </div>
+                            <div class="bd">感觉，明天就是专栏的最后一天 <br></div>
+                            <span class="time">2019-02-12 09:42</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/00/6f/aacb013d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">黄丹</span>
+                            </div>
+                            <div class="bd">课程的最后一天，也是新年上班的第一天，感谢王老师的教育和陪伴，祝您生活开心，工作顺利。<br>今天的题目比前几天的都难一点，只做了三题，太累了TaT。对于动态规划和贪心总觉得很巧妙，如果想不到动态转移方程式，就很难做，但要是想到了，真的是豁然开朗。对于这一类题，还是要多锻炼，找动态转移方程式要从最后一个结果出发，去想这个结果可以由什么得到，知道之前所有结点的信息，如何推导出当前结点的信息，其实和高中学的归纳法有一点点像。 <br>下面给出我今天做的三题的解题思路和代码<br>1.	Problem 121. Best Time to Buy and Sell Stock<br>解题思路：这道题很久以前做的，我们可以维持两个变量 - 分别对应于最小谷值和最大利润（销售价格和最低价格之间的最大差异）的minprice 和maxprofit。<br>代码：https:&#47;&#47;github.com&#47;yyxd&#47;leetcode&#47;blob&#47;master&#47;src&#47;leetcode&#47;array&#47;easy&#47;Problem121.java<br>2.	Problem 120. Triangle<br>解题思路：这道题给一个由整数组成的三角形，自上而下寻找顶点到三角形边的最短的一条路径，设置一个数组A[0...n-1][0...n-1]，A[i][j]代表到达第i行第j列结点的最短路径
+* DP转移方程式为：A[i][j]=min(A[i-1][j-1],A[i-1][j])+triangle[i][j]
+* 其中二维数组可以简化为一维数组，因为我们只需要上一行结点的信息
+* 然后遍历到达最后一行的节点的路径，找到最短路径的值<br>代码：https:&#47;&#47;github.com&#47;yyxd&#47;leetcode&#47;blob&#47;master&#47;src&#47;leetcode&#47;dp&#47;Problem120_Triangle.java<br>3.	Problem 322. Coin Change<br>解题思路：这道题是给定具有n个不同金额的硬币（硬币个数无限）coins[0...n-1]，给一个整数amount，是否给的硬币能正好达到整数，给出能组成整数最少需要的硬币个数.
+解法是设置一个数组A[0...amount],进行初始化A[0]=0;A[1...amount] = -1;保存的是当给定金额为i时，所需要的最少的硬币。
+* dp转移方程式为 A[k] = 1+min(A[k-coins[0]],A[k-coins[1]],....A[k-coins[n-1]]).
+* 这里要注意的是判断A[k]是否有解<br>代码：https:&#47;&#47;github.com&#47;yyxd&#47;leetcode&#47;blob&#47;master&#47;src&#47;leetcode&#47;dp&#47;Problem322_CoinChange.java<br>课程完结撒花，真的学到好多，自己以后还会反复回顾的，再次感谢王争老师，还有每天负责朗读的声音好好听的修阳小哥哥。<br> <br></div>
+                            <span class="time">2019-02-11 21:39</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/ec/9d/4d705f03.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">C_love</span>
+                            </div>
+                            <div class="bd">Best Time to Buy and Sell Stoc...<br><br>class Solution {<br>    public int maxProfit(int[] prices) {<br>        if (prices == null || prices.length == 0 || prices.length == 1) {<br>            return 0;<br>        }<br>        <br>        int max = 0;<br>        int start = 0;<br>        <br>        for (int i = 1; i &lt; prices.length; i++) {<br>            if (prices[i] &lt; prices[start]) {<br>                start = i;<br>            } else {<br>                max = Math.max(max, prices[i] - prices[start]);<br>            }<br>        }<br>        return max;<br>    }<br>} <br></div>
+                            <span class="time">2019-02-11 14:38</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/04/9a/f2c0a206.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">ext4</span>
+                            </div>
+                            <div class="bd">最小路径和<br>class Solution {<br>  public:<br>    int minPathSum(vector&lt; vector&lt;int&gt; &gt;&amp; grid) {<br>      int m = grid.size();<br>      if (m == 0) return 0;<br>      int n = grid[0].size();<br>      if (n == 0) return 0;<br>      int matrix[m][n];<br>      int accum = 0;<br>      for (int i = 0; i &lt; m; i++) {<br>        accum += grid[i][0];<br>        matrix[i][0] = accum;<br>      }<br>      accum = 0;<br>      for (int j = 0; j &lt; n; j++) {<br>        accum += grid[0][j];<br>        matrix[0][j] = accum;<br>      }<br>      for (int i = 1; i &lt; m; i++) {<br>        for (int j = 1; j &lt; n; j++) {<br>          matrix[i][j] = min(matrix[i - 1][j], matrix[i][j - 1]) + grid[i][j];<br>        }<br>      }<br>      return matrix[m - 1][n - 1];<br>    }<br>};<br> <br></div>
+                            <span class="time">2019-02-11 13:11</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/ed/4c/4f645bda.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Kyle Liu</span>
+                            </div>
+                            <div class="bd">有兴趣朋友可以将思路分析提交到https:&#47;&#47;github.com&#47;kylesliu&#47;awesome-golang-leetcode，欢迎大家提issue <br></div>
+                            <span class="time">2019-02-11 11:31</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/1a/8a/ae50ecbb.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">幻月剑</span>
+                            </div>
+                            <div class="bd">一刷完成，题目没有做，算是草草学了一遍，等第二遍将题目都做完 <br></div>
+                            <span class="time">2019-02-11 07:41</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/1d/13/31ea1b0b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">峰</span>
+                            </div>
+                            <div class="bd">七七八八跟着老师复习了遍算法，印象最深刻的无疑是老师结合具体的应用场景讲利用的数据结构与算法！棒棒哒 <br></div>
+                            <span class="time">2019-02-11 00:05</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/07/8c/51401220.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小美</span>
+                            </div>
+                            <div class="bd">这期题目好难，而且在Web网页上找对应的课程有点麻烦，能否在每个Day的文章中加上对应文章的链接呢? <br></div>
+                            <span class="time">2019-02-10 22:24</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/94/47/75875257.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">虎虎❤️</span>
+                            </div>
+                            <div class="bd">正则表达式<br>public boolean isMatch(String s, String p) {<br><br>    if (s == null || p == null) {<br>        return false;<br>    }<br>    boolean[][] dp = new boolean[s.length()+1][p.length()+1];<br>    dp[0][0] = true;<br>    for (int i = 0; i &lt; p.length(); i++) {<br>        if (p.charAt(i) == &#39;*&#39; &amp;&amp; dp[0][i-1]) {<br>            dp[0][i+1] = true;<br>        }<br>    }<br>    for (int i = 0 ; i &lt; s.length(); i++) {<br>        for (int j = 0; j &lt; p.length(); j++) {<br>            if (p.charAt(j) == &#39;.&#39;) {<br>                dp[i+1][j+1] = dp[i][j];<br>            }<br>            if (p.charAt(j) == s.charAt(i)) {<br>                dp[i+1][j+1] = dp[i][j];<br>            }<br>            if (p.charAt(j) == &#39;*&#39;) {<br>                if (p.charAt(j-1) != s.charAt(i) &amp;&amp; p.charAt(j-1) != &#39;.&#39;) {<br>                    dp[i+1][j+1] = dp[i+1][j-1];<br>                } else {<br>                    dp[i+1][j+1] = (dp[i+1][j] || dp[i][j+1] || dp[i+1][j-1]);<br>                }<br>            }<br>        }<br>    }<br>    return dp[s.length()][p.length()];<br>}<br><br>leetcode的排名第一的答案，搬过来了 <br></div>
+                            <span class="time">2019-02-10 21:35</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

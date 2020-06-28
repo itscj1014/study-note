@@ -1,0 +1,339 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x"></p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                春节7天练讲Day5：二叉树和堆
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/2b/c5/2b6d78bbac6ff5bafef934a323ab00c5.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好，我是王争。春节假期进入尾声了。你现在是否已经准备返回工作岗位了呢？今天更新的是测试题的第五篇，我们继续来复习。</p><hr></hr><h2>关于二叉树和堆的7个必知必会的代码实现</h2><h3>二叉树</h3><ul>
+<li>
+<p>实现一个二叉查找树，并且支持插入、删除、查找操作</p>
+</li>
+<li>
+<p>实现查找二叉查找树中某个节点的后继、前驱节点</p>
+</li>
+<li>
+<p>实现二叉树前、中、后序以及按层遍历</p>
+</li>
+</ul><h3>堆</h3><ul>
+<li>
+<p>实现一个小顶堆、大顶堆、优先级队列</p>
+</li>
+<li>
+<p>实现堆排序</p>
+</li>
+<li>
+<p>利用优先级队列合并K个有序数组</p>
+</li>
+<li>
+<p>求一组动态数据集合的最大Top K</p>
+</li>
+</ul><h2>对应的LeetCode练习题（@Smallfly 整理）</h2><ul>
+<li>Invert Binary Tree（翻转二叉树）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/invert-binary-tree/">https://leetcode.com/problems/invert-binary-tree/</a></p><p>中文版：<a href="https://leetcode-cn.com/problems/invert-binary-tree/">https://leetcode-cn.com/problems/invert-binary-tree/</a></p><ul>
+<li>Maximum Depth of Binary Tree（二叉树的最大深度）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/">https://leetcode.com/problems/maximum-depth-of-binary-tree/</a></p><p>中文版：<a href="https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/">https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/</a></p><!-- [[[read_end]]] --><ul>
+<li>Validate Binary Search Tree（验证二叉查找树）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/validate-binary-search-tree/">https://leetcode.com/problems/validate-binary-search-tree/</a></p><p>中文版：<a href="https://leetcode-cn.com/problems/validate-binary-search-tree/">https://leetcode-cn.com/problems/validate-binary-search-tree/</a></p><ul>
+<li>Path Sum（路径总和）</li>
+</ul><p>英文版：<a href="https://leetcode.com/problems/path-sum/">https://leetcode.com/problems/path-sum/</a></p><p>中文版：<a href="https://leetcode-cn.com/problems/path-sum/">https://leetcode-cn.com/problems/path-sum/</a></p><hr></hr><p>做完题目之后，你可以点击“请朋友读”，把测试题分享给你的朋友。</p><p>祝你取得好成绩！明天见！</p><p><img src="https://static001.geekbang.org/resource/image/8e/d3/8e603e3d795fc0ab2698f6f5eabf14d3.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/50/99/44378317.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">李皮皮皮皮皮</span>
+                            </div>
+                            <div class="bd">平衡树的各种操作太烧脑了，左旋右旋，红黑树就更别提了。过段时间就忘。😢 <br></div>
+                            <span class="time">2019-02-09 09:00</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kai</span>
+                            </div>
+                            <div class="bd">树的前中后序遍历-非递归实现：<br>import java.util.Stack;<br><br><br>public class TreeTraversal {<br>    public static class Node {<br>        public int value;<br>        public Node left;<br>        public Node right;<br>        public Node(int value) {<br>            this.value = value;<br>        }<br>    }<br>    &#47;&#47; 二叉树的非递归遍历<br>    public static void preOrder(Node head) {<br>        System.out.print(&quot;pre-order: &quot;);<br>        if (head == null) {<br>            return;<br>        }<br>        Stack&lt;Node&gt; s = new Stack&lt;&gt;();<br>        s.push(head);<br>        while (!s.isEmpty()) {<br>            head = s.pop();<br>            System.out.print(head.value + &quot; &quot;);<br>            if (head.right != null) {<br>                s.push(head.right);<br>            }<br><br>            if (head.left != null) {<br>                s.push(head.left);<br>            }<br>        }<br>        System.out.println();<br>    }<br><br>    public static void inOrder(Node head) {<br>        System.out.print(&quot;in-order: &quot;);<br>        if (head == null) {<br>            return;<br>        }<br>        Stack&lt;Node&gt; s = new Stack&lt;&gt;();<br>        while (!s.isEmpty() || head != null) {<br>            if (head != null) {<br>                s.push(head);<br>                head = head.left;<br>            } else {<br>                head = s.pop();<br>                System.out.print(head.value + &quot; &quot;);<br>                head = head.right;<br>            }<br>        }<br>        System.out.println();<br>    }<br><br>    public static void postOrder(Node head) {<br>        System.out.print(&quot;pos-order: &quot;);<br>        if (head == null) {<br>            return;<br>        }<br><br>        Stack&lt;Node&gt; tmp = new Stack&lt;&gt;();<br>        Stack&lt;Node&gt; s = new Stack&lt;&gt;();<br><br>        tmp.push(head);<br>        while(!tmp.isEmpty()) {<br>            head = tmp.pop();<br>            s.push(head);<br><br>            if (head.left != null) {<br>                tmp.push(head.left);<br>            }<br><br>            if (head.right != null) {<br>                tmp.push(head.right);<br>            }<br>        }<br><br>        while (!s.isEmpty()) {<br>            System.out.print(s.pop().value + &quot; &quot;);<br>        }<br><br>        System.out.println();<br>    }<br>}<br> <br></div>
+                            <span class="time">2019-02-11 11:06</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kai</span>
+                            </div>
+                            <div class="bd">树的前中后序遍历-递归实现：<br><br>public class TreeTraversal {<br><br>    public static class Node {<br>        public int value;<br>        public Node left;<br>        public Node right;<br><br>        public Node(int value) {<br>            this.value = value;<br>        }<br>    }<br><br>    &#47;&#47; 二叉树的递归遍历<br>    public static void preOrderRecursive(Node head) {<br>        if (head == null) {<br>            return;<br>        }<br><br>        System.out.print(head.value + &quot; &quot;);<br>        preOrderRecursive(head.left);<br>        preOrderRecursive(head.right);<br>    }<br><br>    public static void inOrderRecursive(Node head) {<br>        if (head == null) {<br>            return;<br>        }<br><br>        inOrderRecursive(head.left);<br>        System.out.print(head.value + &quot; &quot;);<br>        inOrderRecursive(head.right);<br>    }<br><br>    public static void postOrderRecursive(Node head) {<br>        if (head == null) {<br>            return;<br>        }<br><br>        postOrderRecursive(head.left);<br>        postOrderRecursive(head.right);<br>        System.out.print(head.value + &quot; &quot;);<br>    }<br><br>}<br> <br></div>
+                            <span class="time">2019-02-11 11:05</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">kai</span>
+                            </div>
+                            <div class="bd">今天看了一下这一节的题目，发现校招面试的时候都考过，今天又刷了一下，总结了一波，相应的知识点也总结了一下~ <br></div>
+                            <span class="time">2019-02-10 02:29</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/40/10/b6bf3c3c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">纯洁的憎恶</span>
+                            </div>
+                            <div class="bd">今天的题目很适合递归实现，当然递归公式离代码实现还是存在一定距离。<br>1.翻转二叉树（T）｛<br>当T为Null时则返回；<br>翻转二叉树（T的左子树）；<br>翻转二叉树（T的右子树）；<br>若T不为叶节点，则交换T的左右子树位置；<br>｝<br><br>2.最大深度（T）｛<br>当T为Null时，return 0；<br>return Max（最大深度（T左子树）+1，最大深度（T右子树）+1）；<br>｝<br>函数返回值即为最大深度。<br><br>3.验证二叉查找树（T，&amp;最大值，&amp;最小值）｛<br>当T为Null时，return true；<br>当T为叶节点时，最小值=最大值=当前节点，返回true；<br>左最大值=左最小值=T的值；<br>验证二叉查找树（T的左子树，&amp;左最大值，&amp;左最小值）；<br>右最大值=右最小值=T的值；<br>验证（T的右子树，&amp;右最大值，&amp;右最小值）；<br>T的值小于等于右最小值，并且大于等于左最大值时，最大值=右最大值，最小值=左最小值，之后返回true，否则返回false并结束。<br>｝<br>函数最终返回true则验证成功。<br><br>4.计算路径和（T，sum）｛<br>若T为Null返回false；<br>若T是叶节点，如果sum+T的值=目标值则返回true并结束，否则返回false；<br>计算路径和（T的左子树，sum+T的值）；<br>计算路径和（T的右子树，sum+T的值）；<br>｝<br>计算路径和（T，0）返回true时则存在于目标值相同的路径之和； <br></div>
+                            <span class="time">2019-02-10 00:32</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/3IAJeiapYnr5UuqwQqB7N7gYL71vLnUEibxAeOalsGw4bALEOkhoQMVc3bJ1ZTjL1gTTQmPwQgUfEfR5cnZeMo5g/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">abner</span>
+                            </div>
+                            <div class="bd">java实现二叉树前序、中序、后序和层次遍历<br>代码如下：<br>package tree;<br><br>import java.util.LinkedList;<br>import java.util.Queue;<br><br>public class BinaryTree {<br>    <br>    private Node root = null;<br>    <br>    public static class Node {<br>        <br>        private String data;<br>        private Node left;<br>        private Node right;<br>        <br>        public Node(String data, Node left, Node right) {<br>            this.data = data;<br>            this.left = left;<br>            this.right = right;<br>        }<br>    }<br>    <br>    public void preOrder(Node root) {<br>        if (null == root) {<br>            return ;<br>        }<br>        System.out.print(root.data + &quot; &quot;);<br>        preOrder(root.left);<br>        preOrder(root.right);<br>    }<br>    <br>    public void inOrder(Node root) {<br>        if (null == root) {<br>            return ;<br>        }<br>        inOrder(root.left);<br>        System.out.print(root.data + &quot; &quot;);<br>        inOrder(root.right);<br>    }<br>    <br>    public void postOrder(Node root) {<br>        if (null == root) {<br>            return ;<br>        }<br>        postOrder(root.left);<br>        postOrder(root.right);<br>        System.out.print(root.data + &quot; &quot;);<br>    }<br>    <br>    public void traverseByLayer(Node root) {<br>        if (null == root) {<br>            return ;<br>        }<br>        Queue&lt;Node&gt; queue = new LinkedList&lt;Node&gt;();<br>        queue.add(root);<br>        while (!queue.isEmpty()) {<br>            Node pNode = queue.peek();<br>            System.out.print(pNode.data + &quot; &quot;);<br>            queue.poll();<br>            if (root.left != null) {<br>                queue.add(root.left);<br>            }<br>            if (root.right != null) {<br>                queue.add(root.right);<br>            }<br>        }<br>    }<br>}<br> <br></div>
+                            <span class="time">2019-02-14 23:13</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/69/4d/81c44f45.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">拉欧</span>
+                            </div>
+                            <div class="bd">Path Sum（路径总和）go 语言实现<br>func hasPathSum(root *TreeNode, sum int) bool {<br><br>	if root==nil{<br>		return false<br>	}<br>	if root.Left==nil &amp;&amp; root.Right==nil{<br>		if root.Val==sum{<br>			return true<br>		}else{<br>			return false<br>		}<br><br>	}<br>	left:=false<br>	if root.Left!=nil{<br>		left=hasPathSum(root.Left,sum-root.Val)<br>	}<br>	right:=false<br>	if root.Right!=nil{<br>		right=hasPathSum(root.Right,sum-root.Val)<br>	}<br>	return left || right<br>} <br></div>
+                            <span class="time">2019-02-14 15:17</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/69/4d/81c44f45.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">拉欧</span>
+                            </div>
+                            <div class="bd">Validate Binary Search Tree（验证二叉查找数） go语言实现<br><br>func isValidBST(root *TreeNode) bool {<br><br>	if root==nil{<br>		return true<br>	}<br>	less:=true<br>	more:=true<br>	if root.Left!=nil{<br>		less=JudgeLess(root.Left,root.Val)<br>	}<br>	if root.Right!=nil{<br>		more=JudgeMore(root.Right,root.Val)<br>	}<br>	if ! (less &amp;&amp; more){<br>		return false<br>	}else{<br>		return isValidBST(root.Left) &amp;&amp; isValidBST(root.Right)<br>	}<br>}<br><br>func JudgeLess(root *TreeNode,num int) bool{<br><br>	if root.Val&gt;=num{<br>		return false<br>	}<br>	if root.Left!=nil &amp;&amp; root.Right!=nil{<br>		return JudgeLess(root.Left,num) &amp;&amp; JudgeLess(root.Right,num)<br>	}else if root.Left!=nil{<br>		return JudgeLess(root.Left,num)<br>	}else if root.Right!=nil{<br>		return JudgeLess(root.Right,num)<br>	}else{<br>		return true<br>	}<br>}<br><br>func JudgeMore(root *TreeNode,num int) bool{<br>	if root.Val&lt;=num{<br>		return false<br>	}<br>	if root.Left!=nil &amp;&amp; root.Right!=nil{<br>		return JudgeMore(root.Left,num) &amp;&amp; JudgeMore(root.Right,num)<br>	}else if root.Left!=nil{<br>		return JudgeMore(root.Left,num)<br>	}else if root.Right!=nil{<br>		return JudgeMore(root.Right,num)<br>	}else{<br>		return true<br>	}<br>}<br> <br></div>
+                            <span class="time">2019-02-14 14:57</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/69/4d/81c44f45.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">拉欧</span>
+                            </div>
+                            <div class="bd">Invert Binary Tree（翻转二叉树） go 语言实现<br>func invertTree(root *TreeNode) *TreeNode {<br>	if root==nil{<br>		return root<br>	}<br>	temp:=root.Left<br>	root.Left=root.Right<br>	root.Right=temp<br>	invertTree(root.Left)<br>	invertTree(root.Right)<br>	return root<br>} <br></div>
+                            <span class="time">2019-02-14 11:20</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/23/f6/1ef70cab.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">你看起来很好吃</span>
+                            </div>
+                            <div class="bd">路径之和python实现：<br><br># Definition for a binary tree node.<br># class TreeNode:<br>#     def __init__(self, x):<br>#         self.val = x<br>#         self.left = None<br>#         self.right = None<br><br>class Solution:<br>    def hasPathSum(self, root: &#39;TreeNode&#39;, sum: &#39;int&#39;) -&gt; &#39;bool&#39;:<br>        if not root:<br>            return False<br>        <br>        if not root.left and not root.right and root.val == sum:<br>            return True<br>        <br>        sum -= root.val<br>        <br>        return self.hasPathSum(root.left, sum) or self.hasPathSum(root.right, sum) <br></div>
+                            <span class="time">2019-02-10 15:38</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/23/f6/1ef70cab.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">你看起来很好吃</span>
+                            </div>
+                            <div class="bd">二叉树最大深度python实现，使用递归<br>class Solution:<br>        <br>    def maxDepth(self, root: &#39;TreeNode&#39;) -&gt; &#39;int&#39;:<br>        return self.depth_of_node(root)<br><br>    def depth_of_node(self, node : TreeNode):<br>        dep_left, dep_right = 0, 0<br>        <br>        <br>        if not node:<br>            return 0<br><br>        dep_left = 0 if not node.left else self.depth_of_node(node.left)<br>        dep_right =0 if not node.right else self.depth_of_node(node.right)<br><br>        depth = max(dep_left, dep_right) + 1<br>        <br>        return depth <br></div>
+                            <span class="time">2019-02-10 15:19</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/94/47/75875257.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">虎虎❤️</span>
+                            </div>
+                            <div class="bd">Golang max depth<br>&#47;**<br> * Definition for a binary tree node.<br> * type TreeNode struct {<br> *     Val int<br> *     Left *TreeNode<br> *     Right *TreeNode<br> * }<br> *&#47;<br>func maxDepth(root *TreeNode) int {<br>    <br>    if root == nil {<br>        return 0<br>    }<br>         <br>    if root.Left == nil &amp;&amp; root.Right == nil {<br>         return 1<br>    }<br>        <br>    return int(math.Max(float64(maxDepth(root.Left)), float64(maxDepth(root.Right)))) + 1<br>    <br>} <br></div>
+                            <span class="time">2019-02-09 22:38</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/00/6f/aacb013d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">黄丹</span>
+                            </div>
+                            <div class="bd">王争老师新年的第五天快乐！<br>放上今天LeetCode四题的代码和思路<br>解题思路：对于树，这个结构很特殊，树是由根节点，根节点的左子树，根节点的右子树组成的，定义的时候就是一个递归的定义。因此在解决与树相关的问题的时候，经常会用到递归。今天的四题都不例外。<br>翻转二叉树：就是递归的让节点的左子树指向右子树，右子树指向左子树。<br>二叉树的最大深度：当前深度=1+Max(左子树深度，右子树深度)，递归的结束条件为节点为null，或者是一个叶节点。<br>验证二叉查找树：一颗树是二叉查找树必须满足：当前的节点&gt;=左子树&amp;&amp;当前的节点&lt;=右子树，左子树是二叉查找树，右子树是二叉查找树，也是递归的定义。<br>路径总和：遍历树的路径，看是否和为sum值（树的遍历也是递归的哦）<br>四道题的代码在：https:&#47;&#47;github.com&#47;yyxd&#47;leetcode&#47;tree&#47;master&#47;src&#47;leetcode&#47;tree<br> <br></div>
+                            <span class="time">2019-02-09 20:04</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/1d/13/31ea1b0b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">峰</span>
+                            </div>
+                            <div class="bd">path sum<br>    public boolean hasPathSum(TreeNode root, int sum) {<br>        if(root == null){<br>            return false;<br>        }<br>        <br>        int remainSum = sum - root.val;<br>        <br>        if(root.left == null &amp;&amp; root.right == null){<br>             if(remainSum == 0) return true;<br>        }<br>        <br>       <br>        return hasPathSum(root.left,remainSum) || hasPathSum(root.right,remainSum);<br><br>    } <br></div>
+                            <span class="time">2019-02-09 18:31</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/17/88/be4fe19e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">molybdenum</span>
+                            </div>
+                            <div class="bd">老师新年好~今天我会把所有作业都补齐的<br>https:&#47;&#47;blog.csdn.net&#47;github_38313296&#47;article&#47;details&#47;86817926 <br></div>
+                            <span class="time">2019-02-09 16:06</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/04/9a/f2c0a206.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">ext4</span>
+                            </div>
+                            <div class="bd">二叉树最大深度<br>&#47;**<br> * Definition for a binary tree node.<br> * struct TreeNode {<br> *     int val;<br> *     TreeNode *left;<br> *     TreeNode *right;<br> *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}<br> * };<br> *&#47;<br>class Solution {<br>public:<br>    int maxDepth(TreeNode* root) {<br>        if (root == NULL) {<br>            return 0;<br>        }<br>        int leftDepth = maxDepth(root -&gt; left);<br>        int rightDepth = maxDepth(root -&gt; right);<br>        return 1 + (leftDepth &gt; rightDepth ? leftDepth : rightDepth);<br>    }<br>}; <br></div>
+                            <span class="time">2019-02-09 14:41</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/7c/16/38c07a04.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">_CountingStars</span>
+                            </div>
+                            <div class="bd">二叉树的最大深度 go 语言实现<br>&#47;**<br> * Definition for a binary tree node.<br> * type TreeNode struct {<br> *     Val int<br> *     Left *TreeNode<br> *     Right *TreeNode<br> * }<br> *&#47;<br>func maxDepth(root *TreeNode) int {<br>    if root == nil {<br>        return 0<br>    }<br>    <br>    leftDepth :=0<br>    rightDepth :=0<br>    if root.Left != nil {<br>        leftDepth = maxDepth(root.Left)<br>    }<br>    <br>    if root.Right != nil {<br>        rightDepth = maxDepth(root.Right)<br>    }<br>    <br>    if leftDepth &gt;= rightDepth {<br>        return leftDepth + 1<br>    } else {<br>        return rightDepth + 1<br>    }<br>} <br></div>
+                            <span class="time">2019-02-09 13:10</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/7c/16/38c07a04.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">_CountingStars</span>
+                            </div>
+                            <div class="bd">翻转二叉树 go 语言实现<br>&#47;**<br> * Definition for a binary tree node.<br> * type TreeNode struct {<br> *     Val int<br> *     Left *TreeNode<br> *     Right *TreeNode<br> * }<br> *&#47;<br>func invertTree(root *TreeNode) *TreeNode {<br>    if root == nil {<br>        return nil<br>    }<br>    <br>    if root.Left != nil {<br>        root.Left = invertTree(root.Left)<br>    }<br>    <br>    if root.Right != nil {<br>        root.Right = invertTree(root.Right)<br>    }<br>    <br>    root.Left, root.Right = root.Right, root.Left<br>    <br>    return root<br>} <br></div>
+                            <span class="time">2019-02-09 12:55</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/ec/9d/4d705f03.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">C_love</span>
+                            </div>
+                            <div class="bd">Path Sum<br><br>&#47;**<br> * Definition for a binary tree node.<br> * public class TreeNode {<br> *     int val;<br> *     TreeNode left;<br> *     TreeNode right;<br> *     TreeNode(int x) { val = x; }<br> * }<br> * Time and space complexity: O(n)<br> *&#47;<br>class Solution {<br>    public boolean hasPathSum(TreeNode root, int sum) {<br>        if (root == null) {<br>            return false;<br>        }<br>        if (root.left == null &amp;&amp; root.right == null) {<br>            return sum - root.val == 0;<br>        }<br>        return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);<br>    }<br>} <br></div>
+                            <span class="time">2019-02-09 09:41</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/f2/aa/c04fda0e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">失火的夏天</span>
+                            </div>
+                            <div class="bd">&#47;&#47; 翻转二叉树<br>public TreeNode invertTree(TreeNode root) {<br>        if(root == null){<br>			return root;<br>		}<br>		TreeNode node = root;<br>		Queue&lt;TreeNode&gt; queue = new LinkedList&lt;&gt;();<br>		queue.add(node);<br>		while(!queue.isEmpty()){<br>			node = queue.poll();<br>			TreeNode tempNode = node.left;<br>			node.left = node.right;<br>			node.right = tempNode;<br>			if(node.left != null){<br>				queue.offer(node.left);<br>			}<br>			if(node.right != null){<br>				queue.offer(node.right);<br>			}<br>		}<br>        return root;<br>    }<br>&#47;&#47; 二叉树的最大深度<br>public int maxDepth(TreeNode root) {<br>        if(root == null) return 0;<br>        return Math.max(maxDepth(root.left), maxDepth(root.right))+1;   <br>    }<br>&#47;&#47; 验证二叉查找树<br>public boolean isValidBST(TreeNode root) {<br>        if (root == null) {<br>			return true;<br>		}<br>		Stack&lt;TreeNode&gt; stack = new Stack&lt;&gt;();<br>		TreeNode node = root;<br>		TreeNode preNode = null;<br>		while(node != null || !stack.isEmpty()){<br>			stack.push(node);<br>			node = node.left;<br>			while(node == null &amp;&amp; !stack.isEmpty()){<br>				node = stack.pop();<br>				if(preNode != null){<br>					if(preNode.val &gt;= node.val){<br>						return false;<br>					}<br>				}<br>				preNode = node;<br>				node = node.right;<br>			}<br>		}<br>        return true;<br>    }<br>&#47;&#47; 路径总和<br>public boolean hasPathSum(TreeNode root, int sum) {<br>        if (root == null) {<br>            return false;<br>        }<br>        return hasPathSum(root, root.val, sum);<br>    }<br><br>    public boolean hasPathSum(TreeNode root, int tmp, int sum) {<br>        if (root == null) {<br>            return false;<br>        }<br>        if (root.left == null &amp;&amp; root.right == null) {<br>            return tmp == sum;<br>        }<br>        if (root.left == null) {<br>            return hasPathSum(root.right, root.right.val + tmp, sum);<br>        }<br>        if (root.right == null) {<br>            return hasPathSum(root.left, root.left.val + tmp, sum);<br>        }<br>        return hasPathSum(root.left, root.left.val + tmp, sum) ||<br>                hasPathSum(root.right, root.right.val + tmp, sum);<br>    } <br></div>
+                            <span class="time">2019-02-09 00:11</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
